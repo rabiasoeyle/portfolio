@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+.parent{
+    @include dFlex($jc:space-between)
+}
+svg{
+    width:22px;
+    height:19px;
+    >path {
+        fill:rgb(10, 10, 8);
+    }
+}

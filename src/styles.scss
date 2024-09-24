@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin dFlex($jc:center, $ai:center, $g:0px, $fd:row){
+    display:flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap:$g;
+    flex-direction: $fd;
+}
+body{
+    margin:0;
+    padding:0;
+    max-width:1920px;
+    // @include dFlex($fd:column, $jc: none, $ai:center);
+    min-height: 100vH;
+    // min-width:1440px;
+    font-family: 'Overpass';
+}

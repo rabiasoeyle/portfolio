@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+h1{
+    font-family:'Syne';
+}
+.line-and-name{
+    @include dFlex($g:8px);
+    width:80vW;
+}
+.line{
+    width:80%;
+    height:30px;
+}
+.email{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotateZ(540deg);
+}
+.parent{
+    @include dFlex($fd:column);
+    height:80vH;
+}
+.email-and-scroll-arrow{
+    @include dFlex($jc:space-between, $ai:center);
+    width:100%;
+}
+svg{
+    width:64px;
+    height:108px;
+}
