@@ -1,6 +1,12 @@
 @import '../../../styles.scss';
+.headline-and-name{
+    @include dFlex ($fd:column);
+}
 h1{
     font-family:'Syne';
+    font-size:70px;
+    column-count: 2;
+    @include dFlex ($fd:column);
 }
 .line-and-name{
     @include dFlex($g:8px);
