@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+$cream: #FFFCF3;
 @mixin dFlex($jc:center, $ai:center, $g:0px, $fd:row){
     display:flex;
     justify-content: $jc;
@@ -13,5 +14,8 @@ body{
     // @include dFlex($fd:column, $jc: none, $ai:center);
     min-height: 100vH;
     // min-width:1440px;
+    font-family: 'Overpass';
+}
+.overpass{
     font-family: 'Overpass';
 }

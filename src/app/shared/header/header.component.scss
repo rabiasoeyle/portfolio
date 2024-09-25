@@ -1,8 +1,9 @@
 @import '../../../styles.scss';
 .parent{
-    @include dFlex($jc:space-between)
+    @include dFlex($jc:space-between);
+    background-color: $cream;
 }
-svg{
+.toggle-menu{
     width:22px;
     height:19px;
     >path {
@@ -12,4 +13,14 @@ svg{
 img{
     width:40px;
     height:40px;
+}
+.toggle-content{
+    position: absolute;
+    right:0;
+    @include dFlex($fd:column);
+    >svg{
+        width:200px;
+        height:100px;
+        background-color: $cream;
+    }
 }

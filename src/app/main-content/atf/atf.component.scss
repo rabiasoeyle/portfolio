@@ -24,6 +24,7 @@ h1{
 .parent{
     @include dFlex($fd:column);
     height:80vH;
+    background-color: $cream;
 }
 .email-and-scroll-arrow{
     @include dFlex($jc:space-between, $ai:center);
@@ -32,4 +33,7 @@ h1{
 svg{
     width:64px;
     height:108px;
+}
+.developer-name{
+    color:rgba(0, 188, 143, 1);
 }

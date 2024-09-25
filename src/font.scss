@@ -5,7 +5,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/font/Syne/Syne-VariableFont_wght.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/Syne-VariableFont_wght.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
 /* syne-regular - latin */
@@ -14,7 +14,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/font/Syne/static/Syne-Regular.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/static/Syne-Regular.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* syne-500 - latin */
   @font-face {
@@ -22,7 +22,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 500;
-    src: url('./assets/font/Syne/static/Syne-Medium.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/static/Syne-Medium.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* syne-600 - latin */
   @font-face {
@@ -30,7 +30,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 600;
-    src: url('./assets/font/Syne/static/Syne-SemiBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/static/Syne-SemiBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* syne-700 - latin */
   @font-face {
@@ -38,7 +38,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
-    src: url('./assets/font/Syne/static/Syne-Bold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/static/Syne-Bold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* syne-800 - latin */
   @font-face {
@@ -46,7 +46,7 @@
     font-family: 'Syne';
     font-style: normal;
     font-weight: 800;
-    src: url('./assets/font/Syne/static/Syne-ExtraBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Syne/static/Syne-ExtraBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
 
@@ -62,7 +62,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 100;
-    src: url('./assets/font/Overpass/static/Overpass-Black.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Black.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-100italic - latin */
   @font-face {
@@ -70,7 +70,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 100;
-    src: url('./assets/font/Overpass/static/Overpass-BlackItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-BlackItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-200 - latin */
   @font-face {
@@ -78,7 +78,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 200;
-    src: url('./assets/font/Overpass/static/Overpass-Bold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Bold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-200italic - latin */
   @font-face {
@@ -86,7 +86,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 200;
-    src: url('./assets/font/Overpass/static/Overpass-BoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-BoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-300 - latin */
   @font-face {
@@ -94,7 +94,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 300;
-    src: url('./assets/font/Overpass/static/Overpass-ExtraBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-ExtraBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-300italic - latin */
   @font-face {
@@ -102,7 +102,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 300;
-    src: url('./assets/font/Overpass/static/Overpass-ExtraBoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-ExtraBoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-regular - latin */
   @font-face {
@@ -110,7 +110,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/font/Overpass/static/Overpass-ExtraLight.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-ExtraLight.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-italic - latin */
   @font-face {
@@ -118,7 +118,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 400;
-    src: url('./assets/font/Overpass/static/Overpass-ExtraLightItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-ExtraLightItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-500 - latin */
   @font-face {
@@ -126,7 +126,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 500;
-    src: url('./assets/font/Overpass/static/Overpass-Italic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Italic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-500italic - latin */
   @font-face {
@@ -134,7 +134,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 500;
-    src: url('./assets/font/Overpass/static/Overpass-Light.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Light.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-600 - latin */
   @font-face {
@@ -142,7 +142,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 600;
-    src: url('./assets/font/Overpass/static/Overpass-LightItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-LightItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-600italic - latin */
   @font-face {
@@ -150,7 +150,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 600;
-    src: url('./assets/font/Overpass/static/Overpass-Medium.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Medium.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-700 - latin */
   @font-face {
@@ -158,7 +158,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 700;
-    src: url('./assets/font/Overpass/static/Overpass-MediumItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-MediumItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-700italic - latin */
   @font-face {
@@ -166,7 +166,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 700;
-    src: url('./assets/font/Overpass/static/Overpass-Regular.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Regular.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-800 - latin */
   @font-face {
@@ -174,7 +174,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 800;
-    src: url('./assets/font/Overpass/static/Overpass-SemiBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-SemiBold.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-800italic - latin */
   @font-face {
@@ -182,7 +182,7 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 800;
-    src: url('./assets/font/Overpass/static/Overpass-SemiBoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-SemiBoldItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-900 - latin */
   @font-face {
@@ -190,7 +190,7 @@
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 900;
-    src: url('./assets/font/Overpass/static/Overpass-Thin.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-Thin.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* overpass-900italic - latin */
   @font-face {
@@ -198,5 +198,5 @@
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 900;
-    src: url('./assets/font/Overpass/static/Overpass-ThinItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('assets/font/Overpass/static/Overpass-ThinItalic.ttf') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
