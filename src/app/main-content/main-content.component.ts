@@ -4,7 +4,7 @@ import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { AtfComponent } from './atf/atf.component';
-import { ProjectExamplesComponent } from "../project-examples/project-examples.component";
+import { ProjectExamplesComponent } from "./project-examples/project-examples.component";
 
 @Component({
   selector: 'app-main-content',

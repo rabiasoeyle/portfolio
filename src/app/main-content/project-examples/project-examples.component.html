@@ -1,5 +1,14 @@
-<div>
+<div class="parent">
     <h2>Portfolio</h2>
     <p>Sehen Sie sich einige meiner bisher abgeschlossenen Projekte an. Gerne können Sie die Projekte auf ihren Endgeräten ausprobieren</p>
+    @for(example of projects; track example.name){
+        <div>{{example.name}}</div>
+    }@empty {
+
+    }
+    <div>
+        <app-example></app-example>
+        
+    </div>
     
 </div>
