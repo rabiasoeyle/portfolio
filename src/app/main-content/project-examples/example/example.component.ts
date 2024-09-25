@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ProjectInterface } from '../../../project';
 
 @Component({
   selector: 'app-example',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './example.component.scss'
 })
 export class ExampleComponent {
-
+@Input()singleProject={
+  name:"Sharkie",
+  url:"https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
+  img:"assets/img/Sharkie",
+  date:"",
+  info:"",
+  usedLanguages:["HTML","CSS", "JavaScript"],
+};
+@Output()projectName = new EventEmitter <string>();
+constructor(){
+  
+}
 }

@@ -1,0 +1,22 @@
+@import '../../../styles.scss';
+.parent{
+    max-width:1920px;
+    padding:$parent-padding;
+    @media(max-width:1000px){
+        padding: $parent-padding-medium;
+    }
+    @media(max-width:500px){
+        padding:$parent-padding-resp;
+    }
+    text-align: center;
+}
+.all-projects{
+    @include dFlex($fd:column, $g:100px);
+}
+app-example {
+    @include dFlex($g:20px, $jc:space-between);
+
+    &:nth-child(even) {
+      @include dFlex($g:20px, $jc:space-between, $fd:row-reverse);
+    }
+  }

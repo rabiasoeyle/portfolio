@@ -1,8 +1,8 @@
-export interface Project {
+export interface ProjectInterface {
     name:string,
     url:string,
     img:string,
     date:string,
     info:string,
-    usedLanguages:[],
+    usedLanguages:string[],
 }

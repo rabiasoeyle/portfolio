@@ -1,0 +1,33 @@
+@import '../../../../styles.scss';
+.parent{
+    @include dFlex($g:20px, $jc:space-between);
+    width:80vW;
+}
+img{
+    width:50%;
+    height:350px;
+}
+button{
+    background-color: $cream;
+    border: solid 1px black;
+    width:93px;
+    height:28px;
+    font-weight:400;
+    font-size:23px;
+}
+.name{
+    font-size:45px;
+    font-weight:800;
+}
+.languages{
+    font-size:23px;
+    font-weight:400;
+    color:rgba(0, 188, 143, 1);
+}
+.info{
+    font-size:16px;
+    font-weight:400;
+}
+.info-about-project{
+    @include dFlex($fd:column, $ai:flex-start)
+}
