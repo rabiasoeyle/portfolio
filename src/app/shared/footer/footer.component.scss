@@ -15,6 +15,13 @@ a{
     background-color: black;
     @include dFlex($jc:space-between);
     height: 100px;
+    padding:$parent-padding;
+    @media(max-width:1000px){
+        padding: $parent-padding-medium;
+    }
+    @media(max-width:500px){
+        padding:$parent-padding-resp;
+    }
 }
 .legal-notice-and-svgs{
     display:flex;
