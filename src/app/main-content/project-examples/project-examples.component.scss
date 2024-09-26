@@ -13,10 +13,16 @@
 .all-projects{
     @include dFlex($fd:column, $g:100px);
 }
-app-example {
+.example {
+    width:80vW;
     @include dFlex($g:20px, $jc:space-between);
 
     &:nth-child(even) {
       @include dFlex($g:20px, $jc:space-between, $fd:row-reverse);
     }
   }
+h2{
+    font-family: 'Syne';
+    font-size:78px;
+    font-weight: 800;
+}

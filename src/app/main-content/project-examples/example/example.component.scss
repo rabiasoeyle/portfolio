@@ -1,10 +1,13 @@
 @import '../../../../styles.scss';
 .parent{
-    @include dFlex($g:20px, $jc:space-between);
+    // @include dFlex($g:20px, $jc:space-between);
     width:80vW;
 }
+.languages-parent{
+    @include dFlex();
+}
 img{
-    width:50%;
+    width:600px;
     height:350px;
 }
 button{

@@ -15,6 +15,7 @@ export class HeaderComponent {
   }
   toggleMenu(){
     this.menuIsOpen =!this.menuIsOpen;
+    console.log(this.menuIsOpen)
   }
   
   //This is a eventlistener for the situation, that the toggle-content is open and the user clicks 

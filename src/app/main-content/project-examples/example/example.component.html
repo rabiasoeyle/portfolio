@@ -1,7 +1,15 @@
-<div class="parent">
+<!-- <div class="parent"> -->
     <div class="info-about-project">
         <div class="name">{{singleProject.name}}</div>
-        <div class="languages">{{singleProject.usedLanguages}}</div>
+        <div class="languages-parent">
+            @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
+                @if(!last){
+                    <div id="languages" class="languages">{{language}}|</div>
+                }@else {
+                    <div id="languages" class="languages">{{language}}</div>
+                }
+            }
+        </div>
         <div class="info">{{singleProject.info}}</div>
         <a href={{singleProject.url}} target="_blank" rel="noopener noreferrer">
             <button>
@@ -10,4 +18,4 @@
         </a>
     </div>
     <img src={{singleProject.img}} alt="Project image">
-</div>
+<!-- </div> -->

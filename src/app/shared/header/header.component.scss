@@ -32,10 +32,13 @@ img{
     }
     @include dFlex($fd:column);
     >a{
+        background-color: $cream;
+        padding:0px 48px;
        >svg{
         width:200px;
         height:100px;
-        background-color: $cream;
+        // background-color: $cream;
+        // padding:0px 48px;
         } 
     }
     

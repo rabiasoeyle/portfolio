@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+.parent{
+    max-width:1920px;
+    padding:$parent-padding;
+    @media(max-width:1000px){
+        padding: $parent-padding-medium;
+    }
+    @media(max-width:500px){
+        padding:$parent-padding-resp;
+    }
+    text-align: center;
+}
+.reference-parent{
+    @include dFlex($g:48px);
+}
+.reference{
+    border:solid 2px black;
+    width:200px;
+    height:200px;
+}
+h2{
+    font-family: 'Syne';
+    font-size:78px;
+    font-weight: 800;
+}
+.arrow{
+    text-decoration: none;
+    color:black;
+    @include dFlex($jc:flex-end)
+}
