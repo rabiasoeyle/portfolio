@@ -1,3 +1,4 @@
+@import '../styles.scss';
 body{
     margin:0;
     padding:0;
@@ -5,4 +6,14 @@ body{
 }
 .content{
     height:100vh;
+}
+// .parent-of-page{
+//     // @include dFlex($fd:column);
+// }
+.footer{
+    background-color: black;
+    @include dFlex();
+}
+.header{
+    @include dFlex($fd:column);
 }

@@ -23,6 +23,11 @@ button{
     width:93px;
     height:28px;
     font-weight:400;
+    &:hover{
+        background-color: $mint-button;
+        scale:1.1;
+        border:none;
+    }
 }
 img{
     width:450px;

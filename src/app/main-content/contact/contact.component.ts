@@ -36,7 +36,6 @@ onSubmit(ngForm: NgForm) {
     this.httpClient.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-
           ngForm.resetForm();
         },
         error: (error) => {

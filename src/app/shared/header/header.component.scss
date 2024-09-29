@@ -1,29 +1,31 @@
 @import '../../../styles.scss';
 .parent{
     @include dFlex($jc:space-between);
-    background-color: $cream;
+    max-width:1920px;
     padding:$parent-padding;
     @media(max-width:1000px){
-        padding: $parent-padding-medium;
+        padding:$parent-padding-medium;
     }
     @media(max-width:500px){
         padding:$parent-padding-resp;
     }
+    width:80%;
 }
 .toggle-menu{
-    width:22px;
-    height:19px;
+    width:65px;
+    height:55px;
     >path {
         fill:rgb(10, 10, 8);
     }
 }
 img{
-    width:40px;
-    height:40px;
+    width:80px;
+    height:80px;
 }
 .toggle-content{
     position: absolute;
     right:100px;
+    top:150px;
     @media(max-width:1000px){
         right:48px;
     }
@@ -34,6 +36,11 @@ img{
     >a{
         background-color: $cream;
         padding:0px 48px;
+        transition: 1.25s;
+        &:hover{
+            background-color: $mint-button;
+            border-radius: 50px;
+        }
        >svg{
         width:200px;
         height:100px;

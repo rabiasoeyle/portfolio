@@ -2,6 +2,7 @@
 .parent{
     background-color: black;
     color:white;
+    @include dFlex();
 }
 .parent-content{
     max-width:1920px;
@@ -21,7 +22,8 @@
     height: 0px;
     border-top: 200px solid transparent;
     border-bottom: 0px solid transparent;
-    border-left: 100vW solid rgb(10, 10, 8);
+    border-left: 97vW solid rgb(10, 10, 8);
+    // max-width:1920px;
 }
 .form{
     padding:100px 0px;
@@ -53,6 +55,10 @@ h2{
     background-color: black;
     color:white;
     border: solid 1px white;
+    &:hover{
+        background-color: $mint;
+        scale:1.1;
+    }
 }
 .green-text{
     font-size:32px;

@@ -14,7 +14,7 @@
     @include dFlex($fd:column, $g:100px);
 }
 .example {
-    width:80vW;
+    width:100%;
     @include dFlex($g:20px, $jc:space-between);
 
     &:nth-child(even) {

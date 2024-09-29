@@ -2,6 +2,14 @@
 .headline-and-name{
     @include dFlex ($fd:column);
 }
+a{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    &:hover{
+        color:rgba(0, 188, 143, 1);
+    }
+}
 h1{
     font-family:'Syne';
     font-size:128px;
@@ -11,11 +19,12 @@ h1{
 }
 .line-and-name{
     @include dFlex($g:8px);
-    width:80vW;
+    width:80%;
 }
 .line{
-    width:80%;
-    height:30px;
+    flex:1;
+    height:10px;
+    background-color: black;
 }
 .email{
     writing-mode: vertical-rl;

@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 .parent{
     // @include dFlex($g:20px, $jc:space-between);
-    width:80vW;
+    width:100%;
 }
 .languages-parent{
     @include dFlex();
@@ -17,6 +17,11 @@ button{
     height:28px;
     font-weight:400;
     font-size:23px;
+    &:hover{
+        background-color: $mint-button;
+        scale:1.1;
+        border: none;
+    }
 }
 .name{
     font-size:45px;

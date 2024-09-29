@@ -6,3 +6,6 @@ body{
     background-color: black;
     width:100vW;
 }
+.main-content-parent{
+    @include dFlex($fd:column);
+}
