@@ -7,7 +7,7 @@ a{
     color:black;
     text-align: center;
     &:hover{
-        color:rgba(0, 188, 143, 1);
+        color:$blue;
     }
 }
 h1{
@@ -15,7 +15,21 @@ h1{
     font-size:128px;
     font-weight: 800;
     column-count: 2;
+    text-align: center;
     @include dFlex ($fd:column);
+    @media(max-width:1240px){
+        font-size:80px; 
+        text-align: center;
+    }
+    @media(max-width:1000px){
+        font-size:60px; 
+    }
+    @media(max-width:750px){
+        font-size:40px; 
+    }
+    @media(max-width:450px){
+        font-size:30px; 
+    }
 }
 .line-and-name{
     @include dFlex($g:8px);
@@ -23,17 +37,23 @@ h1{
 }
 .line{
     flex:1;
-    height:10px;
+    height:5px;
     background-color: black;
 }
 .email{
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotateZ(540deg);
+    @media(max-width:1000px){
+        font-size:16px; 
+    }
+    @media(max-width:500px){
+        font-size:12px; 
+    }
 }
 .parent{
     @include dFlex($fd:column);
-    height:80vH;
+    height:50vH;
     background-color: $cream;
     max-width:1920px;
     padding:$parent-padding;
@@ -53,11 +73,26 @@ svg{
     height:108px;
 }
 .developer-name{
-    color:rgba(0, 188, 143, 1);
+    color:$blue;
     font-size:48px;
     font-weight: 700;
+    @media(max-width:1240px){
+        font-size:36px; 
+    }
+    @media(max-width:750px){
+        font-size:28px; 
+    }
+    @media(max-width:500px){
+        font-size:20px; 
+    }
 }
 p{
     font-size:22px;
     font-weight: 300;
+    @media(max-width:1000px){
+        font-size:20px; 
+    }
+    @media(max-width:500px){
+        font-size:14px; 
+    }
 }

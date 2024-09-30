@@ -21,12 +21,14 @@ a{
     padding:$parent-padding;
     @media(max-width:1000px){
         padding: $parent-padding-medium;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
     @media(max-width:500px){
         padding:$parent-padding-resp;
     }
     max-width:1920px;
-    width: 100vH;
+    width: 100vW;
 }
 .legal-notice-and-svgs{
     display:flex;

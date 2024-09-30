@@ -2,6 +2,7 @@
 html {
     scroll-behavior:smooth;
 }
+$blue:rgb(123,199,228);
 $mint:rgba(0, 188, 143, 1);
 $mint-button:rgb(157, 246, 225);
 $cream: #FFFCF3;
@@ -20,6 +21,20 @@ $parent-padding-resp:10px 10px;
     align-items: $ai;
     gap:$g;
     flex-direction: $fd;
+}
+@mixin h2(){
+    font-family: 'Syne';
+    font-size:78px;
+    font-weight: 800;
+    @media(max-width:1250px){
+        font-size:55px; 
+    }
+    @media(max-width:1000px){
+        font-size:50px; 
+    }
+    @media(max-width:600px){
+        font-size:25px; 
+    }
 }
 body{
     margin:0;

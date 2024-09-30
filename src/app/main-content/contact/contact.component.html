@@ -1,4 +1,4 @@
-<div class="wrapper"></div>
+<!-- <div class="wrapper">Hey</div> -->
 <div class="parent">
     <div class="parent-content">
         <h2>Say Hi !</h2>
@@ -20,7 +20,7 @@
             }
             <div class="checkbox-and-text">
                 <input #checkbox="ngModel"type="checkbox" id="vehicle1" name="vehicle1" value="Bike" [(ngModel)]="contactData.pPolicyAccepted" required>
-                <label for="vehicle1"> I have read the <a href="dataProtection">privacy policy</a> and agree to the processing of my data as outlined</label><br>
+                <label  class ="label-checkbox"for="vehicle1"> I have read the <a href="dataProtection">privacy policy</a> and agree to the processing of my data as outlined</label><br>
                 @if(!checkbox){
                 <p class="error">Please accept our privacy policy</p>
                 }

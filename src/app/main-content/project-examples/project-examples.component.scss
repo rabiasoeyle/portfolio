@@ -18,11 +18,15 @@
     @include dFlex($g:20px, $jc:space-between);
 
     &:nth-child(even) {
-      @include dFlex($g:20px, $jc:space-between, $fd:row-reverse);
+        @include dFlex($g:20px, $jc:space-between, $fd:row-reverse);
+        @media(max-width:1000px){
+            flex-direction: column-reverse;
+        }
+    }
+    @media(max-width:1000px){
+        flex-direction: column-reverse;
     }
   }
 h2{
-    font-family: 'Syne';
-    font-size:78px;
-    font-weight: 800;
+    @include h2();
 }

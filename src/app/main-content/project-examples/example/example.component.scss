@@ -8,34 +8,66 @@
 }
 img{
     width:600px;
-    height:350px;
+    height:auto;
+    flex:1;
+    @media(max-width:1000px){
+        width:30%;
+        height:auto;
+    }
+    @media(max-width:500px){
+        width:80px;
+        height:auto;
+    }
 }
 button{
     background-color: $cream;
     border: solid 1px black;
-    width:93px;
-    height:28px;
+    padding:16px 26px;
     font-weight:400;
-    font-size:23px;
+    font-size:30px;
     &:hover{
-        background-color: $mint-button;
+        background-color: $blue;
         scale:1.1;
         border: none;
+    }
+    @media(max-width:1000px){
+        font-size: 22px;
+        padding:8px 12px;
+    }
+    @media(max-width:500px){
+        font-size:12px ;
+        padding:4px 8px;
     }
 }
 .name{
     font-size:45px;
     font-weight:800;
+    @media(max-width:1000px){
+        font-size: 30px;
+        text-align: center;
+    }
+    @media(max-width:500px){
+        font-size:20px ;
+    }
 }
 .languages{
     font-size:23px;
     font-weight:400;
-    color:rgba(0, 188, 143, 1);
+    color:$blue;
+    @media(max-width:1000px){
+        font-size: 18px;
+    }
+    @media(max-width:500px){
+        font-size:12px ;
+    }
 }
 .info{
     font-size:16px;
     font-weight:400;
 }
 .info-about-project{
-    @include dFlex($fd:column, $ai:flex-start)
+    @include dFlex($fd:column, $ai:flex-start);
+    @media(max-width:1000px){
+        align-items: center;
+    }
 }

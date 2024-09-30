@@ -43,11 +43,13 @@
         border:none;
         border-bottom: solid 1px white;
     }
+    @media(max-width:1000px){
+        font-size:16px;
+        width:70%;
+    }
 }
 h2{
-    font-family: 'Syne';
-    font-size:78px;
-    font-weight: 800;
+    @include h2();
 }
 .submit-button{
     width:200px;
@@ -56,31 +58,47 @@ h2{
     color:white;
     border: solid 1px white;
     &:hover{
-        background-color: $mint;
+        background-color: $blue;
         scale:1.1;
     }
 }
 .green-text{
     font-size:32px;
-    color:rgb(0, 188, 143);
+    color:$blue;
     font-weight:700;
+    @media(max-width:1000px){
+        font-size:22px;
+    }
 }
 .say-hello-text{
     font-size:22px;
     color:$cream;
+    @media(max-width:1000px){
+        font-size: 16px;
+    }
 }
 .checkbox-and-text{
     @include dFlex($jc:flex-start);
     padding:32px 0px;
+    @media(max-width:1000px){
+        justify-content: center;
+    }
 }
 a{
     text-decoration: none;
-    color:rgb(0, 188, 143);
+    color:$blue;
     &:hover{
-        color:rgb(102, 245, 211);
+        color:$blue;
         scale:1.1;
     }
 }
 .error{
     color:red;
+}
+.label-checkbox{
+    text-align: center;
+    @media(max-width:1000px){
+        font-size: 10px;
+    }
+    
 }

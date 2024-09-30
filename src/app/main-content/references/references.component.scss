@@ -12,19 +12,52 @@
 }
 .reference-parent{
     @include dFlex($g:48px);
+    @media(max-width:1000px){
+        flex-direction: column;
+    }
 }
 .reference{
     border:solid 2px black;
     width:200px;
     height:200px;
+    @media(max-width:1000px){
+        width:160px;
+        height:160px; 
+    }
 }
 h2{
-    font-family: 'Syne';
-    font-size:78px;
-    font-weight: 800;
+    @include h2();
 }
 .arrow{
     text-decoration: none;
     color:black;
-    @include dFlex($jc:flex-end)
+    @include dFlex($jc:flex-end);
+    @media(max-width:1000px){
+    >svg{
+        width:100px;
+        height:100px; 
+    }
+    }
+    
+}
+p{
+    font-size:12px;
+}
+.wrapper{
+    height: 0px;
+    border-top: 100px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 98vW solid rgb(0, 0, 0);
+    // max-width:1920px;
+    @media(max-width:1600px){
+        border-top: 50px solid transparent;
+        border-left: 96vW solid rgb(0, 0, 0);
+    }
+    @media(max-width:1000px){
+        border-top: 50px solid transparent;
+        border-left: 93vW solid rgb(0, 0, 0);
+    }
+}
+label{
+    font-size:8px;
 }

@@ -11,25 +11,67 @@
     
 }
 legend{
-    font-family: 'Syne';
-    font-size:78px;
-    font-weight: 800;
+    @include h2();
+}
+.skills-line{
+    @include dFlex($g:128px);
+    @media(max-width:1300px){
+        gap:80px;
+    }
+    @media(max-width:1120px){
+        gap:40px;
+    }
+    @media(max-width:700px){
+        gap:20px;
+    }
+    @media(max-width:580px){
+        gap:20px;
+        flex-wrap: wrap;
+    }
 }
 fieldset{
-    @include dFlex($g:128px);
-    flex-wrap:wrap;
-    height:633px;
+    @include dFlex($g:128px,$fd:column);
     text-align: center;
     border:solid 10px black;
+    padding:40px;
+    @media(max-width:1300px){
+        gap:80px;
+    }
+    @media(max-width:1120px){
+        gap:40px;
+    }
+    @media(max-width:700px){
+        gap:20px;
+        padding:16px;
+    }
     >div{
         text-align: center;
+        padding:0px;
         >svg{
         width:100px;
         height:100px;
+        @media(max-width:1000px){
+            width:50px;
+            height:50px;
+        }
+        @media(max-width:700px){
+            width:40px;
+            height:40px;
+        }
         }
         >p{
             font-size:22px;
         }
     }
    
+}
+.arrow-to-portfolio{
+    @media(max-width:1000px){
+        width:160px;
+        height:160px;
+    }
+    @media(max-width:700px){
+        width:80px;
+        height:80px;
+    }
 }

@@ -4,7 +4,7 @@ body{
 }
 .contact{
     background-color: black;
-    width:100vW;
+    width:100%;
 }
 .main-content-parent{
     @include dFlex($fd:column);
