@@ -13,6 +13,7 @@ body{
 .footer{
     background-color: black;
     @include dFlex();
+    
 }
 .header{
     @include dFlex($fd:column);

@@ -53,7 +53,7 @@ h1{
 }
 .parent{
     @include dFlex($fd:column);
-    height:50vH;
+    height:60vH;
     background-color: $cream;
     max-width:1920px;
     padding:$parent-padding;

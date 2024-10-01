@@ -14,5 +14,5 @@ import { ProjectExamplesComponent } from "./project-examples/project-examples.co
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
-
+  
 }
