@@ -2,7 +2,7 @@
 .parent{
     background-color: black;
     color:white;
-    @include dFlex();
+    @include dFlex($fd:column);
 }
 .parent-content{
     max-width:1920px;
@@ -20,10 +20,19 @@
 }
 .wrapper{
     height: 0px;
-    border-top: 200px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 97vW solid rgb(10, 10, 8);
+    border-top: 100px solid $cream;
+    border-bottom: 0px solid $cream;
+    border-left: 97vW solid transparent;
+    z-index:1;
     // max-width:1920px;
+    @media(max-width:1600px){
+        border-top: 50px solid $cream;
+        border-left: 93vW solid transparent;
+    }
+    @media(max-width:1000px){
+        border-top: 50px solid $cream;
+        border-left: 90vW solid transparent;
+    }
 }
 .form{
     padding:100px 0px;

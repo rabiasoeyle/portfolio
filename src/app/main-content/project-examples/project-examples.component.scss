@@ -8,7 +8,6 @@
     @media(max-width:500px){
         padding:$parent-padding-resp;
     }
-    text-align: center;
 }
 .all-projects{
     @include dFlex($fd:column, $g:100px);
@@ -21,12 +20,18 @@
         @include dFlex($g:20px, $jc:space-between, $fd:row-reverse);
         @media(max-width:1000px){
             flex-direction: column-reverse;
+            align-items: flex-end;
         }
     }
     @media(max-width:1000px){
         flex-direction: column-reverse;
+        align-items: flex-start;
     }
   }
 h2{
     @include h2();
+    text-align: center;
+}
+p{
+    text-align: center;
 }

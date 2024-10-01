@@ -17,6 +17,7 @@ export class ExampleComponent {
   info:"",
   usedLanguages:["HTML","CSS", "JavaScript"],
 };
+@Input()even = false;
 @Output()projectName = new EventEmitter <string>();
 constructor(){
   

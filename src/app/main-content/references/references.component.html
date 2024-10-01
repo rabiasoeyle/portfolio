@@ -1,10 +1,10 @@
 <div class="parent">
     <h2>References</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis accusantium unde omnis sed temporibus. Fuga magnam beatae officiis ad adipisci iure iste molestias. Nostrum, incidunt deserunt. Unde, blanditiis exercitationem?</p>
+    <p class="info-before">Hier sind einige Referenzen zu meiner Person.</p>
     <div class="reference-parent">
         @for(reference of referenceList.references; track reference){
             <div class="reference">
-                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="quotation-mark"width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_119944_569" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="41" height="40">
                     <rect x="0.666992" width="40" height="40" fill="#D9D9D9"/>
                     </mask>
@@ -14,7 +14,7 @@
                 </svg>
                 <p>{{reference.name}}</p>
                 <p>Team Partner</p>
-                <div>{{reference.reference}}</div>
+                <div class="reference-text">{{reference.reference}}</div>
             </div>
         }
     </div>
@@ -25,4 +25,4 @@
         </svg>
     </a>
 </div>
-<div class="wrapper"></div>
+<!-- <div class="wrapper"></div> -->
