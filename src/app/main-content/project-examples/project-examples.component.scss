@@ -23,6 +23,8 @@
             flex-direction: column-reverse;
             align-items: flex-end;
         }
+        // opacity: 0;
+        // transform: translateX(100%);
     }
     @media(max-width:1000px){
         flex-direction: column-reverse;
@@ -35,4 +37,13 @@ h2{
 }
 p{
     text-align: center;
+}
+
+.showLeft{
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
+}
+.show{
+    animation: slideIn 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
 }

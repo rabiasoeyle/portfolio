@@ -26,7 +26,7 @@ export class SkillsComponent implements AfterViewInit {
         if (entry.isIntersecting) {
           right.classList.add('show');
           left.classList.add('showLeft');
-          observer.observe(skills);
+          observer.unobserve(skills);
         } 
       });
     }, options);

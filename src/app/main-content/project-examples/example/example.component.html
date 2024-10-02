@@ -1,6 +1,6 @@
 
     @if(even){
-        <div #textEven class="info-about-project-even">
+        <div class="info-about-project-even">
             <div class="name">{{singleProject.name}}</div>
             <div class="languages-parent">
                 @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
@@ -18,11 +18,11 @@
                 </button>
             </a>
         </div>
-        <img #imgEven src={{singleProject.img}} alt="Project image">
+        <img class="img-even" src={{singleProject.img}} alt="Project image">
     }@else {
 
     
-    <div #text class="info-about-project">
+    <div class="info-about-project">
         <div class="name">{{singleProject.name}}</div>
         <div class="languages-parent">
             @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
@@ -40,5 +40,5 @@
             </button>
         </a>
     </div>
-    <img #img src={{singleProject.img}} alt="Project image">
+    <img class="img"src={{singleProject.img}} alt="Project image">
 }

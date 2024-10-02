@@ -37,9 +37,6 @@ button{
     }
     opacity: 0; /* Startet unsichtbar */
     transform: translateX(100%);
-    // clip-path: inset(0 100% 0 0); /* Versteckt das Element */
-    // transition: clip-path 1.5s ease-in-out, opacity 0.2s ease-in-out;
-    
 }
 img{
     width:450px;

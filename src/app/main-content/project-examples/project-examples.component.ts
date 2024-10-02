@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject,ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 import { ExampleComponent } from './example/example.component';
 import { ProjectInterface } from '../../project';
 import { ProjectService } from '../../project.service';
@@ -10,42 +10,56 @@ import { ProjectService } from '../../project.service';
   templateUrl: './project-examples.component.html',
   styleUrl: './project-examples.component.scss'
 })
-export class ProjectExamplesComponent {
-projects: ProjectInterface[];
-projectlistdata= inject(ProjectService)
-constructor(){
-  this.projects = this.projectlistdata.projectlist;
-  console.log(this.projects)
+export class ProjectExamplesComponent implements AfterViewInit{
+  @ViewChildren('example', { read: ElementRef }) examples!: QueryList<ElementRef>;
+  
+  ngAfterViewInit() {
+    this.examples.forEach((example, index) => {
+      console.log('Element:', example.nativeElement, 'Index:', index);
+      if(index== 1){
+        const elementRight = example.nativeElement;
+        const options = {
+          root: null,
+          rootMargin: '100px',
+          threshold: 0.2,
+        };
+          const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                  elementRight.classList.add('showLeft');
+                  observer.unobserve(elementRight)
+            } 
+          });
+        }, options);
+        observer.observe(elementRight);
+      }else{
+        const element = example.nativeElement;
+      
+      
+    
+      const options = {
+      root: null,
+      rootMargin: '100px',
+      threshold: 0.2,
+    };
+      const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+              element.classList.add('show');
+              observer.unobserve(element)
+        } 
+      });
+    }, options);
+    observer.observe(element);
+  }});
+  }
+
+  projects: ProjectInterface[];
+  projectlistdata= inject(ProjectService)
+  constructor(){
+    this.projects = this.projectlistdata.projectlist;
+    console.log(this.projects)
 }
 
-// projectsArray(): ProjectInterface[]{
-// return [
-//   {
-//     name:"Sharkie",
-//     url:"https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
-//     img:"assets/img/Sharkie",
-//     date:"",
-//     info:"",
-//     usedLanguages:["HTML","CSS", "JavaScript"],
-//   },
-//   {
-//     name:"Join",
-//     url:"https://bd-0524-join-1.developerakademie.net/join-group-wark/html/index.html",
-//     img:"assets/img/Join",
-//     date:"",
-//     info:"",
-//     usedLanguages:["HTML", "CSS", "JavaScript"],
-//   },
-//   {
-//     name:"Pokedex",
-//     url:"https://rabia-soeylemez.developerakademie.net/pokemon/index.html",
-//     img:"assets/img/Pokedex",
-//     date:"",
-//     info:"",
-//     usedLanguages:["HTML", "CSS", "JavaScript"],
-//   },
-
-
-// ]
 }
 

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter,ElementRef, AfterViewInit, ViewChild } from '@angular/core';
 import { ProjectInterface } from '../../../project';
 
 @Component({
@@ -8,7 +8,8 @@ import { ProjectInterface } from '../../../project';
   templateUrl: './example.component.html',
   styleUrl: './example.component.scss'
 })
-export class ExampleComponent {
+export class ExampleComponent{
+  
 @Input()singleProject={
   name:"Sharkie",
   url:"https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
