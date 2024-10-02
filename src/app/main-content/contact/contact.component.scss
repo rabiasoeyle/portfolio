@@ -61,15 +61,7 @@ h2{
     @include h2();
 }
 .submit-button{
-    width:200px;
-    height:48px;
-    background-color: black;
-    color:white;
-    border: solid 1px white;
-    &:hover{
-        background-color: $blue;
-        scale:1.1;
-    }
+    @include button($bgc:black, $bc:$cream, $fc:$cream);
 }
 .green-text{
     font-size:32px;

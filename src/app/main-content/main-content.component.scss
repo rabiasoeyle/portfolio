@@ -11,16 +11,13 @@ body{
 }
 .skills{
     width: 100%;
+    @include dFlex();
 }
-
-.my-element {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-  
-  /* Add a class to the element to trigger the animation */
-  .my-element.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.portfolio{
+    width: 100%;
+    @include dFlex();
+}
+.references{
+    width: 100%;
+    @include dFlex();
+}

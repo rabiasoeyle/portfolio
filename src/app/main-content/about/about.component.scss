@@ -8,7 +8,6 @@
     @media(max-width:500px){
         padding:$parent-padding-resp;
     }
-    
 }
 .text-and-profileimg{
     @include dFlex($g:20px, $ai:flex-start);
@@ -25,27 +24,22 @@
     }
 }
 button{
-    background-color: $cream;
-    border: solid 1px black;
-    font-size:30px;
-    font-weight:400;
-    padding:16px 24px;
-    transition: 1.2s;
-    &:hover{
-        background-color: $blue;
-        scale:1.1;
-        border:none;
-    }
-    @media(max-width:800px){
-        font-size: 22px;
-        padding:8px 16px;
-    }
+    @include button();
+}
+.show{
+    animation: slideIn 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
 }
 .img-div{
     @media(max-width:1120px){
         width:100%;
         @include dFlex()
     }
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateX(100%);
+    // clip-path: inset(0 100% 0 0); /* Versteckt das Element */
+    // transition: clip-path 1.5s ease-in-out, opacity 0.2s ease-in-out;
+    
 }
 img{
     width:450px;
@@ -90,4 +84,12 @@ p{
 }
 .short-info-text{
     padding:0px 20px;
+}
+.showLeft{
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
+}
+.text-and-button-about{
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateX(-100%);
 }

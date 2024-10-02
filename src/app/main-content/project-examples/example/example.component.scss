@@ -9,7 +9,7 @@
 img{
     width:600px;
     height:auto;
-    flex:1;
+    // flex:1;
     @media(max-width:1400px){
         width:480px;
     }
@@ -27,24 +27,25 @@ img{
     }
 }
 button{
-    background-color: $cream;
-    border: solid 1px black;
-    padding:16px 26px;
-    font-weight:400;
-    font-size:30px;
-    &:hover{
-        background-color: $blue;
-        scale:1.1;
-        border: none;
-    }
-    @media(max-width:1000px){
-        font-size: 22px;
-        padding:8px 12px;
-    }
-    @media(max-width:500px){
-        font-size:12px ;
-        padding:4px 8px;
-    }
+    @include button();
+    // background-color: $cream;
+    // border: solid 1px black;
+    // padding:16px 26px;
+    // font-weight:400;
+    // font-size:30px;
+    // &:hover{
+    //     background-color: $blue;
+    //     scale:1.1;
+    //     border: none;
+    // }
+    // @media(max-width:1000px){
+    //     font-size: 22px;
+    //     padding:8px 12px;
+    // }
+    // @media(max-width:500px){
+    //     font-size:12px ;
+    //     padding:4px 8px;
+    // }
 }
 .name{
     font-size:45px;

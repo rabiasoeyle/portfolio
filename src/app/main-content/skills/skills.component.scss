@@ -2,13 +2,13 @@
 .parent{
     max-width:1920px;
     padding:$parent-padding;
+    width:100%;
     @media(max-width:1000px){
-        padding: $parent-padding-medium;
+        padding:$parent-padding-medium;
     }
     @media(max-width:500px){
         padding:$parent-padding-resp;
-    }
-    
+    }   
 }
 legend{
     @include h2();
@@ -91,4 +91,12 @@ span{
     @media(max-width:700px){
         font-size:16px;
     }
+}
+.showLeft{
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
+}
+.show{
+    animation: slideIn 1.5s ease-in-out forwards;
+    animation-iteration-count: 1
 }

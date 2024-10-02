@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html {
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 $blue:rgb(123,199,228);
 $mint:rgba(0, 188, 143, 1);
@@ -15,6 +16,49 @@ $parent-padding-resp:10px 20px;
 // @media(min-width:500px){
 //     padding:$parent-padding-resp;
 // }
+    @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateX(100%); /* Startet außerhalb des Bildschirms */
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0); /* Endposition im Viewport */
+        }
+    }
+    @keyframes slideInLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%); /* Startet außerhalb des Bildschirms */
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0); /* Endposition im Viewport */
+        }
+    }
+
+@mixin button($bgc:$cream, $bc:black, $fc:black) {
+        background-color: $bgc;
+        border: solid 1px $bc;
+        padding:16px 26px;
+        font-weight:400;
+        font-size:30px;
+        transition: 1.1s;
+        color:$fc;
+        &:hover{
+            background-color: $blue;
+            scale:1.1;
+            border: none;
+        }
+        @media(max-width:1000px){
+            font-size: 22px;
+            padding:8px 16px;
+        }
+        @media(max-width:500px){
+            font-size:16px ;
+            padding:4px 8px;
+        }
+}
 @mixin dFlex($jc:center, $ai:center, $g:0px, $fd:row){
     display:flex;
     justify-content: $jc;
