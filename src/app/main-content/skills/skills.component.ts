@@ -9,11 +9,13 @@ import { Component,ElementRef, AfterViewInit, ViewChild } from '@angular/core';
 })
 export class SkillsComponent implements AfterViewInit {
   @ViewChild('lineOne') right!: ElementRef;
-  @ViewChild('ineTwo') left!: ElementRef;
+  @ViewChild('lineTwo') left!: ElementRef;
+  @ViewChild('mySkills') skills!: ElementRef;
   
   ngAfterViewInit() {
     let right = this.right.nativeElement;
-    let left = this.left.nativeElement
+    let left = this.left.nativeElement;
+    let skills = this.skills.nativeElement;
     const options = {
       root: null,
       rootMargin: '100px',
@@ -21,15 +23,16 @@ export class SkillsComponent implements AfterViewInit {
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting && !left.classList.contains('showLeft')) {
+        if (entry.isIntersecting) {
           right.classList.add('show');
           left.classList.add('showLeft');
-          observer.unobserve(right);
-          observer.unobserve(left);
+          observer.observe(skills);
         } 
       });
     }, options);
-    observer.observe(right);
-    observer.observe(left);
+    // observer.observe(right);
+    // observer.observe(left);
+    observer.observe(skills);
+
   }
 }
