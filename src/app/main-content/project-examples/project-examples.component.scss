@@ -1,4 +1,7 @@
 @import '../../../styles.scss';
+html{
+    overflow-x: hidden;
+}
 .parent{
     max-width:1920px;
     padding:$parent-padding;

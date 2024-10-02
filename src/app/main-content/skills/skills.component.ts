@@ -19,7 +19,7 @@ export class SkillsComponent implements AfterViewInit {
     const options = {
       root: null,
       rootMargin: '100px',
-      threshold: 0.2,
+      threshold: 0.3,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {

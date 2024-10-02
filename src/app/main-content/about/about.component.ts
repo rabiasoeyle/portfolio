@@ -20,7 +20,7 @@ export class AboutComponent implements AfterViewInit{
       //null um als Ansichtsquelle den gesamten Browser zu nutzen
       rootMargin: '100px',
       //dient zum vergrößern oder verkleinern des Hauptrahmens des Wurzelelements
-      threshold: 0.2,
+      threshold: 0.3,
       //gibt an wie viel Prozent des elements bereits sichtbar sein müssen, damit die animation ausgeführt wird
       
     };
@@ -36,10 +36,6 @@ export class AboutComponent implements AfterViewInit{
           observer.unobserve(img);
           observer.unobserve(text);
         } 
-        // else {
-        //   img.classList.remove('show');
-        //   text.classList.remove('showLeft');
-        // }
       });
     }, options);
 
