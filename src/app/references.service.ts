@@ -12,7 +12,7 @@ export class ReferencesService {
       reference:"Lorem",
     },
     {
-      name:"Maximilian Stiegler",
+      name:"Maximilian Stigler",
       reference:"Lorem",
     },
     {

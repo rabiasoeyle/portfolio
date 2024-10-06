@@ -15,7 +15,7 @@
             @if(!email.valid && email.touched){
                 <p class="error">Please enter a valid email</p>
             }
-            <textarea class="input" #message ="ngModel" minlength="4"[(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message.." style="height:200px" required></textarea>
+            <textarea class="input" #message="ngModel" minlength="4"[(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message.." style="height:200px" required></textarea>
             @if(!message.valid && message.touched){
                 <p class="error">Please enter a message, with more then 4 letters</p>
             }

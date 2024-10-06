@@ -15,7 +15,6 @@ export class ProjectExamplesComponent implements AfterViewInit{
   
   ngAfterViewInit() {
     this.examples.forEach((example, index) => {
-      console.log('Element:', example.nativeElement, 'Index:', index);
       if(index== 1){
         const elementRight = example.nativeElement;
         const options = {
@@ -58,7 +57,6 @@ export class ProjectExamplesComponent implements AfterViewInit{
   projectlistdata= inject(ProjectService)
   constructor(){
     this.projects = this.projectlistdata.projectlist;
-    console.log(this.projects)
 }
 
 }

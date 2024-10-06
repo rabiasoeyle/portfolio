@@ -14,7 +14,6 @@ export class ReferencesComponent implements AfterViewInit{
   
   ngAfterViewInit() {
     this.examples.forEach((example, index) => {
-      console.log('Element:', example.nativeElement, 'Index:', index);
       if(index == 0){
         const elementRight = example.nativeElement;
         const options = {

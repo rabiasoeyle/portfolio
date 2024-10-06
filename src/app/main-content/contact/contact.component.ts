@@ -18,10 +18,11 @@ contactData = {
   pPolicyAccepted: false,
 };
 
-mailTest = true;
+mailTest = false;
+//dieses hier muss zu false umgeändert werden, bevor ich diese auf den Server lade
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://rabia-soeylemez.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -32,20 +33,27 @@ mailTest = true;
   };
 
 onSubmit(ngForm: NgForm) {
-  if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.contactData.pPolicyAccepted) {
+  console.log(this.contactData);
+  if (ngForm.form.valid && !this.mailTest && this.contactData.pPolicyAccepted) {
     this.httpClient.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
           ngForm.resetForm();
+          console.log('subscribe.next-teil');
         },
         error: (error) => {
           console.error(error);
         },
         complete: () => console.info('send post complete'),
       });
-  } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+  }
+  //die erste if-Abfrage wird nur durchgeführt,wenn das Projekt über die domain geladen wird, 
+  //sonst wird der elseIf Teil geladen 
+  else if (ngForm.form.valid && this.mailTest) {
     ngForm.resetForm();
+    console.log('Else-if-Teil');
+  }else {
+    console.error('Form is invalid or privacy policy not accepted');
   }
 }
 
