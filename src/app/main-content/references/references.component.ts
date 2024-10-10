@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, inject, ViewChildren, ElementRef, QueryList } from '@angular/core';
 import { ReferencesInterface } from '../../references';
 import { ReferencesService } from '../../references.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })

@@ -2,11 +2,12 @@ import { Component, inject,ElementRef, AfterViewInit, ViewChildren, QueryList } 
 import { ExampleComponent } from './example/example.component';
 import { ProjectInterface } from '../../project';
 import { ProjectService } from '../../project.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-examples',
   standalone: true,
-  imports: [ExampleComponent],
+  imports: [ExampleComponent, TranslateModule],
   templateUrl: './project-examples.component.html',
   styleUrl: './project-examples.component.scss'
 })

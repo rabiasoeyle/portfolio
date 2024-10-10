@@ -1,14 +1,17 @@
 import { NgIf } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  translate = inject(TranslationService);
   menuIsOpen:boolean = false;
   constructor(){
 

@@ -1,10 +1,11 @@
 import { Component, Input, Output, EventEmitter,ElementRef, AfterViewInit, ViewChild } from '@angular/core';
 import { ProjectInterface } from '../../../project';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-example',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './example.component.html',
   styleUrl: './example.component.scss'
 })

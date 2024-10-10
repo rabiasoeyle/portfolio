@@ -1,0 +1,70 @@
+{
+  "projectExamples": {
+    "headlineText": "Take a look at some of the projects I've completed so far. Feel free to try them out on your devices.",
+    "openButton": "open",
+    "projectlist": [
+      {
+        "name": "Sharkie",
+        "url": "https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
+        "img": "assets/img/Sharkie.png",
+        "date": "09/24",
+        "info": "Sharkie is a Jump-and-Run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to fight the killer whale.",
+        "usedLanguages": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Join",
+        "url": "https://bd-0524-join-1.developerakademie.net/join-group-wark/html/index.html",
+        "img": "assets/img/Join.png",
+        "date": "",
+        "info": "Join is a task manager inspired by the Kanban system. Create and organize tasks with drag-and-drop functions, assign users and categories.",
+        "usedLanguages": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Pokedex",
+        "url": "https://rabia-soeylemez.developerakademie.net/pokemon/index.html",
+        "img": "assets/img/Pokedex.png",
+        "date": "07/24",
+        "info": "A Pokedex is a simple library that provides and catalogs Pokémon information based on the PokeAPI.",
+        "usedLanguages": ["HTML", "CSS", "JavaScript"]
+      }
+    ]
+  },
+  "reference": {
+    "text":"Here are some references to my person",
+    "references": [
+      {
+        "name": "Muaz Yildiz",
+        "reference": "Rabia's commitment to her work and her ability to solve complex problems make her a valuable asset to any team. I am confident that she can successfully tackle any challenge in software development."
+      },
+      {
+        "name": "Maximilian Stigler",
+        "reference": "Rabia is highly motivated and learns incredibly quickly thanks to her fast comprehension. During our joint project, she often took the initiative and inspired us all with her dedication."
+      },
+      {
+        "name": "Robert Böpple",
+        "reference": "During our joint project work, Rabia Söylemez particularly impressed with her professional project planning and monitoring. Thanks to her structured approach, the project always ran smoothly, and all deadlines were met on time."
+      }
+    ]
+  },
+  "aboutMe": {
+    "headline": "About Me",
+    "mainText": "My interest in development has accompanied me throughout my life – from the first technical challenges to targeted further education. During my studies in quality management for medical devices, I gained valuable experience, which I have further expanded through my training as a web developer. In this training, I learned intensively how to apply modern technologies in practice, and I look forward to successfully applying this knowledge in a company and constantly expanding it.",
+    "workplace": "Open to remote work",
+    "resident": "Based in Stuttgart",
+    "button": "Contact me"
+  },
+  "atf": {
+    "scrollButton": "scroll down"
+  },
+  "contact": {
+
+  },
+  "skills": {
+    "firstSentence": "Didn't find the skills you're looking for?",
+    "link": "Contact",
+    "secondSentence": "me! I'm always ready to learn."
+  },
+  "footer": {
+    "legalNotice": "Privacy Policy"
+  }
+}

@@ -1,9 +1,10 @@
 import { Component,ElementRef, AfterViewInit, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -30,8 +31,6 @@ export class SkillsComponent implements AfterViewInit {
         } 
       });
     }, options);
-    // observer.observe(right);
-    // observer.observe(left);
     observer.observe(skills);
 
   }

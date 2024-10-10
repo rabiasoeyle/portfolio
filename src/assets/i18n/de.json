@@ -1,0 +1,70 @@
+{
+  "projectExamples":{
+    "headlineText":"Sehen Sie sich einige meiner bisher abgeschlossenen Projekte an. Gerne können Sie die Projekte auf ihren Endgeräten ausprobieren",
+    "openButton":"öffnen",
+      "projectlist": [
+        {
+          "name": "Sharkie",
+          "url": "https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
+          "img": "assets/img/Sharkie.png",
+          "date": "09/24",
+          "info": "Sharkie ist ein Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          "name": "Join",
+          "url": "https://bd-0524-join-1.developerakademie.net/join-group-wark/html/index.html",
+          "img": "assets/img/Join.png",
+          "date": "",
+          "info": "Join ist ein Task-Manager, der vom Kanban-System inspiriert ist. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+        },
+        {
+          "name": "Pokedex",
+          "url": "https://rabia-soeylemez.developerakademie.net/pokemon/index.html",
+          "img": "assets/img/Pokedex.png",
+          "date": "07/24",
+          "info": "Ein Pokedex ist eine einfache Bibliothek, die Pokemon-Informationen basierend auf der PokeAPI bereitstellt und katalogisiert.",
+          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+        }
+      ]
+  },
+  "reference":{
+    "text":"Hier sind einige Referenzen zu meiner Person.",
+    "references": [
+        {
+          "name": "Muaz Yildiz",
+          "reference": "Rabias Engagement für ihre Arbeit sowie ihre Fähigkeit, komplexe Probleme zu lösen, machen sie zu einer wertvollen Bereicherung für jedes Team. Ich bin überzeugt davon, dass sie in der Lage ist, jede Herausforderung im Bereich der Softwareentwicklung erfolgreich anzugehen."
+        },
+        {
+          "name": "Maximilian Stigler",
+          "reference": "Rabia ist hoch motiviert und lernt dank ihrer schnellen Auffassungsgabe unglaublich schnell. Bei unserem gemeinsamen Projekt hat sie oft die Initiative übernommen und uns alle mit ihrem Engagement mitgezogen."
+        },
+        {
+          "name": "Robert Böpple",
+          "reference": "Während unserer gemeinsamen Projektarbeit konnte Rabia Söylemez besonders durch ihre professionelle Projektplanung und -überwachung überzeugen. Dank ihrer strukturierten Herangehensweise verlief das Projekt stets reibungslos, und alle Abgabetermine wurden fristgerecht eingehalten."
+        }
+      ]
+  },    
+  "aboutMe":{
+    "headline":"Über mich",
+    "mainText":"Mein Interesse an Entwicklung begleitet mich bereits mein ganzes Leben – von den ersten technischen Herausforderungen bis hin zur gezielten Weiterbildung. Während meines Studiums im Qualitätsmanagement für Medizinprodukte habe ich wertvolle Erfahrungen gesammelt, die ich nun durch meine Fortbildung als Webentwicklerin weiter ausbauen konnte. In dieser Fortbildung habe ich intensiv gelernt, wie ich moderne Technologien in der Praxis anwende, und freue mich darauf, dieses Wissen erfolgreich im Unternehmen einzubringen und stets zu erweitern.",
+    "workplace":"Offen für Remotearbeit",
+    "resident":"Wohnhaft in Stuttgart",
+    "button":"Sprich mich an"
+  },
+  "atf":{
+    "scrollButton":"scroll runter"
+  },
+  "contact":{
+
+  },
+  "skills":{
+    "firstSentence":"Haben Sie nicht die Fähigkeiten gefunden, die Sie suchen?",
+    "link":"Kontaktieren",
+    "secondSentence":"Sie mich! Ich bin jederzeit bereit zu lernen."
+  },
+  "footer":{
+    "legalNotice":"Datenschutz"
+  }
+}

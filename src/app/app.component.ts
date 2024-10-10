@@ -6,6 +6,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+// import { TranslateModule } from '@ngx-translate/core';
+// import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
