@@ -2,9 +2,9 @@
     <img src="assets/img/bold-logo-white.png" alt="">
     <div class="lang-and-page-toggle-menu">
         <div class="lang-toggle-menu">
-            <div class="single-lang"(click)="openLanguages()">{{translate.currentLanguage === 'en' ? 'EN' : 'DE'}}</div>
-            <div class="single-lang-click" *ngIf="langMenuIsOpen" (click)="translate.switchLanguage('en')">EN</div>
-            <div class="single-lang-click" *ngIf="langMenuIsOpen" (click)="translate.switchLanguage('de')">DE</div>
+            <div id="langToggleButton"class="single-lang"(click)="openLanguages()">{{translate.currentLanguage === 'en' ? 'EN' : 'DE'}}</div>
+            <div id="langToggleContent"class="single-lang-click" *ngIf="langMenuIsOpen" (click)="translate.switchLanguage('en')">EN</div>
+            <div id="langToggleContent-de"class="single-lang-click" *ngIf="langMenuIsOpen" (click)="translate.switchLanguage('de')">DE</div>
         </div>
         <div class="toggle-menu-parent">
             <svg id="toggleMenu"class="toggle-menu"(click)="toggleMenu()" width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -30,11 +30,20 @@ export class HeaderComponent {
   handleClick(event: Event) {
     const toggleMenuButton = document.getElementById('toggleMenu');
     const toggleContent = document.getElementById('toggleContent');
+    const langToggleButton = document.getElementById('langToggleButton');
+    const langToggleContent = document.getElementById('langToggleContent');
+    const langToggleContentDe = document.getElementById('langToggleContent-de');
     if (
       this.menuIsOpen && 
       toggleMenuButton && !toggleMenuButton.contains(event.target as Node) 
     ) {
       this.menuIsOpen = false;
+    }
+    if(
+      this.langMenuIsOpen && langToggleButton && 
+      !langToggleButton.contains(event.target as Node)
+    ){
+      this.langMenuIsOpen = false;
     }
   }
 

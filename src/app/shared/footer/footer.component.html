@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="logo-and-imprint">
-        <img src="assets/img/bold-logo.png" alt="">
-        <a href="imprint">&#64; Rabia Söylemez 2024</a>
+        <a [routerLink]="['/']"><img src="assets/img/bold-logo.png" alt=""></a>
+        <a [routerLink]="['imprint']">&#64; Rabia Söylemez 2024</a>
     </div>
     <div class="legal-notice-and-svgs">
         <div class="link-svgs">
@@ -26,6 +26,6 @@
             </a>
             
         </div>
-        <a href="dataProtection">{{"footer.legalNotice"|translate}}</a>
+        <a [routerLink]="['dataProtection']">{{"footer.legalNotice"|translate}}</a>
     </div>
 </div>
