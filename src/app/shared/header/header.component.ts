@@ -13,11 +13,15 @@ import { TranslationService } from '../../translation.service';
 export class HeaderComponent {
   translate = inject(TranslationService);
   menuIsOpen:boolean = false;
+  langMenuIsOpen:boolean = false;
   constructor(){
 
   }
   toggleMenu(){
     this.menuIsOpen =!this.menuIsOpen;
+  }
+  openLanguages(){
+    this.langMenuIsOpen =!this.langMenuIsOpen;
   }
   
   //This is a eventlistener for the situation, that the toggle-content is open and the user clicks 
@@ -28,8 +32,7 @@ export class HeaderComponent {
     const toggleContent = document.getElementById('toggleContent');
     if (
       this.menuIsOpen && 
-      toggleMenuButton && !toggleMenuButton.contains(event.target as Node) && 
-      toggleContent && !toggleContent.contains(event.target as Node)
+      toggleMenuButton && !toggleMenuButton.contains(event.target as Node) 
     ) {
       this.menuIsOpen = false;
     }

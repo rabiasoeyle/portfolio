@@ -1,8 +1,9 @@
 @import '../../../styles.scss';
 .parent{
-    background-color: black;
+    // background-color: black;
     color:white;
     @include dFlex($fd:column);
+    margin-top: 20%;
 }
 .parent-content{
     max-width:1920px;
@@ -17,26 +18,12 @@
     @include dFlex($fd:column);
     background-color: black;
     color:white;
-}
-.wrapper{
-    height: 0px;
-    border-top: 100px solid $cream;
-    border-bottom: 0px solid $cream;
-    border-left: 97vW solid transparent;
-    z-index:1;
-    // max-width:1920px;
-    @media(max-width:1600px){
-        border-top: 50px solid $cream;
-        border-left: 93vW solid transparent;
-    }
-    @media(max-width:1000px){
-        border-top: 50px solid $cream;
-        border-left: 90vW solid transparent;
-    }
+    width:100%;
 }
 .form{
     padding:100px 0px;
     background-color: black;
+    width:80%;
 }
 .input{
     color:white;
