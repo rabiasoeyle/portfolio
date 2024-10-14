@@ -1,5 +1,5 @@
 <div class="parent">
-    <img src="assets/img/bold-logo-white.png" alt="">
+    <a [routerLink]="['/']"><img src="assets/img/bold-logo-white.png" alt=""></a>
     <div class="lang-and-page-toggle-menu">
         <div class="lang-toggle-menu">
             <div id="langToggleButton"class="single-lang"(click)="openLanguages()">{{translate.currentLanguage === 'en' ? 'EN' : 'DE'}}</div>

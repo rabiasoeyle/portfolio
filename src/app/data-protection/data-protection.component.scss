@@ -1,0 +1,52 @@
+@import "../../styles.scss";
+.parent{
+    @include dFlex();
+    padding:$parent-padding;
+    @media(max-width:1000px){
+        padding: $parent-padding-medium;
+    }
+    @media(max-width:500px){
+        padding:$parent-padding-resp;
+    }
+}
+.child{
+    @include dFlex($fd:column, $ai:flex-start);
+    max-width:1920px;
+}
+h1{
+    font-size:40px;
+    color:$blue;
+}
+h2{
+    font-size:30px;
+    color:$blue;
+}
+h3{
+    font-size:28px;
+    color:$blue;
+}
+h4{
+    color:$blue;
+}
+p{
+    font-size:20px;
+}
+a {
+    // display: inline-block;
+    overflow-wrap: break-word;
+    // text-overflow: ellipsis;
+  }
+@media(max-width:1000px){
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:20px;
+    }
+    h3{
+        font-size:18px;
+    }
+    p{
+        font-size:16px;
+    }
+}

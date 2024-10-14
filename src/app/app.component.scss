@@ -7,14 +7,15 @@ body{
 .content{
     height:100vh;
 }
-// .parent-of-page{
-//     // @include dFlex($fd:column);
-// }
 .footer{
     background-color: black;
     @include dFlex();
     
 }
 .header{
-    @include dFlex($fd:column);
+    @include dFlex();
+    position: sticky;
+    top:0;
+    background-color: $cream;
+    z-index:100;
 }

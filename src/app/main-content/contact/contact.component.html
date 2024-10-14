@@ -1,32 +1,32 @@
 
 <div class="parent">
     <div class="parent-content">
-        <h2>Say Hi !</h2>
-        <p class="green-text">Want to discuss a new project?</p>
-        <p class="say-hello-text">Say Hello! Let's discuss your ideas and make it happen</p>
+        <h2>{{"contact.sayHi"|translate}}</h2>
+        <p class="green-text">{{"contact.discussProject"|translate}}</p>
+        <p class="say-hello-text">{{"contact.letsDiscuss"|translate}}</p>
         <form  class="form" (ngSubmit)="onSubmit(contactForm)" #contactForm = "ngForm">
         
             <input #name="ngModel" class="input" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" placeholder="Your name.." required>
             @if(!name.valid && name.touched){
-                <p class="error">Please enter a valid email</p>
+                <p class="error">{{"contact.nameError"|translate}}</p>
             }
             <input #email="ngModel" class="input" [(ngModel)]="contactData.email" type="email" id="lname" name="email" placeholder="Your email.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             @if(!email.valid && email.touched){
-                <p class="error">Please enter a valid email</p>
+                <p class="error">{{"contact.emailError"|translate}}</p>
             }
-            <textarea class="input" #message="ngModel" minlength="4"[(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message.." style="height:200px" required></textarea>
+            <textarea class="input" #message="ngModel" minlength="10"[(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message.." style="height:200px" required></textarea>
             @if(!message.valid && message.touched){
-                <p class="error">Please enter a message, with more then 4 letters</p>
+                <p class="error">{{"contact.messageError"|translate}}</p>
             }
             <div class="checkbox-and-text">
                 <input #checkbox="ngModel"type="checkbox" id="vehicle1" name="vehicle1" value="Bike" [(ngModel)]="contactData.pPolicyAccepted" required>
-                <label  class ="label-checkbox"for="vehicle1"> I have read the <a href="dataProtection">privacy policy</a> and agree to the processing of my data as outlined</label><br>
+                <label  class ="label-checkbox"for="vehicle1"> {{"contact.privacyPolicy"|translate}} <a [routerLink]="['dataProtection']">{{"contact.privacyPolicyLink"|translate}}</a> {{"contact.privacyPolicyTwo"|translate}}</label><br>
                 @if(!checkbox){
-                <p class="error">Please accept our privacy policy</p>
+                <p class="error">{{"contact.ppError"|translate}}</p>
                 }
             </div>
             <button class="submit-button" type="submit" value="Submit">
-                Send message
+                {{"contact.submitButton"|translate}}
             </button>
         </form>
     </div>

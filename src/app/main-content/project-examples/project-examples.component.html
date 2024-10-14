@@ -1,6 +1,6 @@
 <div class="parent">
     <h2>Portfolio</h2>
-    <p>Sehen Sie sich einige meiner bisher abgeschlossenen Projekte an. Gerne können Sie die Projekte auf ihren Endgeräten ausprobieren</p>
+    <p>{{"projectExamples.headlineText"|translate}}</p>
     <div class="all-projects">
     @for(example of projectlistdata.projectlist; track example.name; let index = $index; let odd = $odd; let even=$even){
         <app-example #example class="example"[singleProject]="example" [even]="even"></app-example>

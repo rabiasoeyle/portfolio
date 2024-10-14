@@ -10,16 +10,10 @@ $cream: #FFFCF3;
 $parent-padding: 60px 100px;
 $parent-padding-medium: 20px 48px;
 $parent-padding-resp:10px 20px;
-// @media(min-width:1000px){
-//     padding: $parent-padding-medium;
-// }
-// @media(min-width:500px){
-//     padding:$parent-padding-resp;
-// }
     @keyframes slideIn {
         0% {
           opacity: 0;
-          transform: translateX(100%); /* Startet außerhalb des Bildschirms */
+          transform: translateX(16%); /* Startet außerhalb des Bildschirms */
         }
         100% {
           opacity: 1;
@@ -29,7 +23,7 @@ $parent-padding-resp:10px 20px;
     @keyframes slideInLeft {
         0% {
           opacity: 0;
-          transform: translateX(-100%); /* Startet außerhalb des Bildschirms */
+          transform: translateX(-16%); /* Startet außerhalb des Bildschirms */
         }
         100% {
           opacity: 1;

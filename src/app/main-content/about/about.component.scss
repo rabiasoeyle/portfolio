@@ -39,7 +39,6 @@ button{
         @include dFlex()
     }
     opacity: 0; /* Startet unsichtbar */
-    transform: translateX(100%);
 }
 img{
     width:450px;
@@ -81,9 +80,17 @@ p{
 }
 .info-text{
     padding:0px 0px 40px 0px;
+    font-size: 20px;
+    @media(max-width:1000px){
+        font-size: 16px;
+    }
 }
 .short-info-text{
     padding:0px 20px;
+    font-size: 20px;
+    @media(max-width:1000px){
+        font-size: 16px;
+    }
 }
 .showLeft{
     animation: slideInLeft 1.5s ease-in-out forwards;
@@ -91,5 +98,5 @@ p{
 }
 .text-and-button-about{
     opacity: 0; /* Startet unsichtbar */
-    transform: translateX(-100%);
+    // transform: translateX(-10%);
 }

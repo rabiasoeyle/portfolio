@@ -57,7 +57,20 @@
     "scrollButton":"scroll runter"
   },
   "contact":{
-
+    "sayHi":"Sag Hallo!",
+    "discussProject":"Möchtest du ein neues Projekt besprechen?",
+    "letsDiscuss":"Schreib mich gerne an und wir verwirklichen deine Träume",
+    "namePlaceholder":"Dein Name...",
+    "nameError":"Bitte gebe deinen Namen an.",
+    "emailPlaceholder":"Deine E-Mail...",
+    "emailError":"Bitte gebe eine gültige E-Mail an",
+    "messagePlaceholder":"Deine Nachricht ...",
+    "messageError":"Bitte gebe eine Nachricht mit mindestens 10 Zeichen an.",
+    "privacyPolicy":"Ich habe die",
+    "privacyPolicyLink":"Datenschutzerklärung",
+    "privacyPolicyTwo":"gelesen und akzeptiere die Verarbeitung meiner Daten",
+    "ppError":"Bitte akzeptiere unsere Datenschutzrichtlinien",
+    "submitButton":"Nachricht senden"
   },
   "skills":{
     "firstSentence":"Haben Sie nicht die Fähigkeiten gefunden, die Sie suchen?",
@@ -66,5 +79,23 @@
   },
   "footer":{
     "legalNotice":"Datenschutz"
+  },
+  "imprint":{
+    "headline":"Impressum",
+    "responsiblePerson":"Verantwortliche",
+    "adress":"Postanschrift",
+    "email":"E-Mail",
+    "telephone":"Telefon",
+    "notesWebsite":"Hinweise zur Website",
+    "copyrightNoticesHeadline":"Urheberrechtliche Hinweise",
+    "copyrightNotices":"Es dürfen keine SVGs und Images aus der Seite anderweitig genutzt werden.",
+    "impressumGenerator":"Dieses Impressum wurde mit Hilfe des",
+    "impressumGeneratorLink":"Impressums-Generators der activeMind AG",
+    "impressumGeneratorTwo":"erstellt (Version 2024-07-05)."
+  },
+  "privacyPolicy":{
+    "dataSafety":"Datenschutzhinweise",
+    "responsibleHeadline":"Verantwortlicher",
+    "yourRightsHeadline":"Ihre Betroffenenrechte"
   }
 }
