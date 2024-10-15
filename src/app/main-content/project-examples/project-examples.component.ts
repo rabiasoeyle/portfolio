@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './project-examples.component.scss'
 })
 export class ProjectExamplesComponent implements AfterViewInit{
-  @ViewChildren('example', { read: ElementRef }) examples!: QueryList<ElementRef>;
+  @ViewChildren('exampleElement', { read: ElementRef }) examples!: QueryList<ElementRef>;
   
   ngAfterViewInit() {
     setTimeout(()=>{

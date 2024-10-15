@@ -53,10 +53,10 @@ h1{
 }
 .parent{
     @include dFlex($fd:column);
-    height:60vH;
+    height:100vH;
     background-color: $cream;
     max-width:1920px;
-    padding:300px 100px;
+    padding:$parent-padding;
     @media(max-width:1000px){
         padding: $parent-padding-medium;
     }

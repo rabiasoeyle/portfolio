@@ -5,4 +5,5 @@ export interface ProjectInterface {
     date:string,
     info:string,
     usedLanguages:string[],
+    gitHub:string
 }

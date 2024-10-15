@@ -1,7 +1,7 @@
 {
   "projectExamples":{
     "headlineText":"Sehen Sie sich einige meiner bisher abgeschlossenen Projekte an. Gerne können Sie die Projekte auf ihren Endgeräten ausprobieren",
-    "openButton":"öffnen",
+    "openButton":"GitHub öffnen",
       "projectlist": [
         {
           "name": "Sharkie",
@@ -9,15 +9,17 @@
           "img": "assets/img/Sharkie.png",
           "date": "09/24",
           "info": "Sharkie ist ein Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
-          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+          "usedLanguages": ["HTML", "CSS", "JavaScript"],
+          "gitHub":"https://github.com/rabiasoeyle/sharky.git"
         },
         {
           "name": "Join",
           "url": "https://bd-0524-join-1.developerakademie.net/join-group-wark/html/index.html",
           "img": "assets/img/Join.png",
-          "date": "",
+          "date": "09/24",
           "info": "Join ist ein Task-Manager, der vom Kanban-System inspiriert ist. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
-          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+          "usedLanguages": ["HTML", "CSS", "JavaScript"],
+          "gitHub":"https://github.com/rabiasoeyle/join-group.git"
         },
         {
           "name": "Pokedex",
@@ -25,7 +27,8 @@
           "img": "assets/img/Pokedex.png",
           "date": "07/24",
           "info": "Ein Pokedex ist eine einfache Bibliothek, die Pokemon-Informationen basierend auf der PokeAPI bereitstellt und katalogisiert.",
-          "usedLanguages": ["HTML", "CSS", "JavaScript"]
+          "usedLanguages": ["HTML", "CSS", "JavaScript"],
+          "gitHub":"https://github.com/rabiasoeyle/pokemon.git"
         }
       ]
   },

@@ -31,12 +31,15 @@ html{
         width:300px;
         height:300px; 
     }
+    @media(max-width:1200px){
+        width:100%;
+    }
     @media(max-width:1000px){
         height:auto;
     }
     @media(max-width:500px){
-        width:200px;
-        height:200px; 
+        // width:200px;
+        height:auto; 
     }
     
 }
@@ -72,15 +75,20 @@ p{
     }
 }
 .reference-text{
-    font-size:20px;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    padding: 16px 0px;
+    font-size:18px;
+    // overflow-y: scroll;
+    // scrollbar-width: none;
+    padding: 16px 8px;
+    flex:1;
+    // letter-spacing:auto;
+    line-height: 1.5; 
+    height:50%;
+    @include dFlex();
     @media(max-width:1000px){
         font-size: 16px;
     }
     @media(max-width:700px){
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 label{

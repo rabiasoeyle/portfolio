@@ -11,17 +11,17 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ExampleComponent{
   
-@Input()singleProject={
+@Input()singleProject ={
   name:"Sharkie",
   url:"https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
   img:"assets/img/Sharkie",
   date:"",
   info:"",
   usedLanguages:["HTML","CSS", "JavaScript"],
+  gitHub:""
 };
 @Input()even = false;
 @Output()projectName = new EventEmitter <string>();
 constructor(){
-  
 }
 }

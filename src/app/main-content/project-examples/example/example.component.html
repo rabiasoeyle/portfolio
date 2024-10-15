@@ -12,13 +12,16 @@
                 }
             </div>
             <div class="info">{{singleProject.info}}</div>
-            <a class="project-url" href={{singleProject.url}} target="_blank" rel="noopener noreferrer">
+            <a class="project-url" href="{{singleProject.gitHub}}" target="_blank" rel="noopener noreferrer">
                 <button>
-                    Open project
+                    {{"projectExamples.openButton"|translate}}
                 </button>
             </a>
         </div>
-        <img class="img-even" src={{singleProject.img}} alt="Project image">
+        <a class="project-url" href="{{singleProject.url}}" target="_blank" rel="noopener noreferrer"> 
+            <img class="img-even" src={{singleProject.img}} alt="Project image">
+            <!-- <button class="img-open-project-button">Open Project</button> -->
+        </a>
     }@else {
         <div  class="info-about-project">
             <div class="name">{{singleProject.name}}</div>
@@ -32,11 +35,16 @@
                 }
             </div>
             <div class="info-odd">{{singleProject.info}}</div>
-            <a class="project-url" href={{singleProject.url}} target="_blank" rel="noopener noreferrer">
+            <a class="project-url" href="{{singleProject.gitHub}}" target="_blank" rel="noopener noreferrer">
                 <button>
-                    Open project
+                    {{"projectExamples.openButton"|translate}}
                 </button>
             </a>
+
         </div>
-        <img class="img"src={{singleProject.img}} alt="Project image">
+        <a class="project-url" href="{{singleProject.url}}" target="_blank" rel="noopener noreferrer">
+            <img class="img"src={{singleProject.img}} alt="Project image">  
+            <!-- <button class="img-open-project-button">Open Project</button> -->
+        </a>
+        
     }

@@ -3,8 +3,9 @@
     <p>{{"projectExamples.headlineText"|translate}}</p>
     <div class="all-projects">
     @for(example of projectlistdata.projectlist; track example.name; let index = $index; let odd = $odd; let even=$even){
-        <app-example #example class="example"[singleProject]="example" [even]="even"></app-example>
-    }@empty {
+        @if(projectlistdata.projectlist.length > 0){
+            <app-example #exampleElement class="example" [singleProject]="example" [even]="even"></app-example>
+    }}@empty {
     }
     </div>
 </div>

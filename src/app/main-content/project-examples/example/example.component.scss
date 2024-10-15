@@ -44,6 +44,20 @@
         height:auto;
     }
 }
+.img-open-project-button{
+    opacity: 0;
+    z-index:4;
+    @include button();
+}
+.project-url{
+    position: relative;
+    >img{
+        transition: 125ms;
+        &:hover{
+            scale:1.1;
+        }
+    }
+}
 button{
     @include button();
 }
