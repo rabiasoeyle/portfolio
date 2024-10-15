@@ -28,6 +28,9 @@
             <button class="submit-button" type="submit" value="Submit">
                 {{"contact.submitButton"|translate}}
             </button>
+            @if(!name.valid || !message.valid || !email.valid || !checkbox){
+                <p class="error">{{"contact.submitError"|translate}}</p>
+            }
         </form>
     </div>
 </div>

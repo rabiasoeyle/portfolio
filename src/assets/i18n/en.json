@@ -70,7 +70,8 @@
     "privacyPolicyLink":"privacy policy",
     "privacyPolicyTwo":"and agree to the processing of my data as outlined",
     "ppError":"Please accept our privacy policy",
-    "submitButton":"Send message"
+    "submitButton":"Send message",
+    "submitError":"Please fill all fields"
   },
   "skills": {
     "firstSentence": "Didn't find the skills you're looking for?",

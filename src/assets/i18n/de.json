@@ -70,7 +70,8 @@
     "privacyPolicyLink":"Datenschutzerklärung",
     "privacyPolicyTwo":"gelesen und akzeptiere die Verarbeitung meiner Daten",
     "ppError":"Bitte akzeptiere unsere Datenschutzrichtlinien",
-    "submitButton":"Nachricht senden"
+    "submitButton":"Nachricht senden",
+    "submitError":"Bitte füllen sie alle Felder aus."
   },
   "skills":{
     "firstSentence":"Haben Sie nicht die Fähigkeiten gefunden, die Sie suchen?",

@@ -11,8 +11,9 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './references.component.scss'
 })
 export class ReferencesComponent implements AfterViewInit{
-  @ViewChildren('reference', { read: ElementRef }) examples!: QueryList<ElementRef>;
   
+  referenceList = inject(ReferencesService);
+  @ViewChildren('reference', { read: ElementRef }) examples!: QueryList<ElementRef>;
   ngAfterViewInit() {
     this.examples.forEach((example, index) => {
       if(index == 0){
@@ -52,5 +53,4 @@ export class ReferencesComponent implements AfterViewInit{
   }
 });
   }
-referenceList = inject(ReferencesService);
 }
