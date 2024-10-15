@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, inject, ViewChildren, ElementRef, QueryList } from '@angular/core';
+import { AfterViewInit, Component, inject, ViewChildren, ElementRef, QueryList, AfterContentInit } from '@angular/core';
 import { ReferencesInterface } from '../../references';
 import { ReferencesService } from '../../references.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -10,11 +10,11 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })
-export class ReferencesComponent implements AfterViewInit{
+export class ReferencesComponent implements AfterContentInit{
   
   referenceList = inject(ReferencesService);
   @ViewChildren('reference', { read: ElementRef }) examples!: QueryList<ElementRef>;
-  ngAfterViewInit() {
+  ngAfterContentInit() {
     this.examples.forEach((example, index) => {
       if(index == 0){
         const elementRight = example.nativeElement;
@@ -52,5 +52,5 @@ export class ReferencesComponent implements AfterViewInit{
   }else{
   }
 });
-  }
+}
 }
