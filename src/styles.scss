@@ -13,21 +13,21 @@ $parent-padding-resp:10px 20px;
     @keyframes slideIn {
         0% {
           opacity: 0;
-          transform: translateX(16%); /* Startet außerhalb des Bildschirms */
+          transform: translateY(16%); /* Startet außerhalb des Bildschirms */
         }
         100% {
           opacity: 1;
-          transform: translateX(0); /* Endposition im Viewport */
+          transform: translateY(0); /* Endposition im Viewport */
         }
     }
     @keyframes slideInLeft {
         0% {
           opacity: 0;
-          transform: translateX(-16%); /* Startet außerhalb des Bildschirms */
+          transform: translateY(-16%); /* Startet außerhalb des Bildschirms */
         }
         100% {
           opacity: 1;
-          transform: translateX(0); /* Endposition im Viewport */
+          transform: translateY(0); /* Endposition im Viewport */
         }
     }
 

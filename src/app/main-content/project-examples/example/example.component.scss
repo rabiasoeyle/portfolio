@@ -16,13 +16,8 @@
         width:400px;
         height:auto;
     }
-    @media(max-width:700px){
-        width:300px;
-        height:auto;
-    }
-    @media(max-width:400px){
-        width:200px;
-        height:auto;
+    @media(max-width:1000px){
+        width:100%;
     }
 }
 .img-even{
@@ -35,13 +30,8 @@
         width:400px;
         height:auto;
     }
-    @media(max-width:700px){
-        width:300px;
-        height:auto;
-    }
-    @media(max-width:400px){
-        width:200px;
-        height:auto;
+    @media(max-width:1000px){
+        width:100%;
     }
 }
 .img-open-project-button{
@@ -90,14 +80,8 @@ button{
         width:480px;
     }
     @media(max-width:1000px){
-        width:400px;
+        width:100%;
         font-size: 16px;
-    }
-    @media(max-width:700px){
-        width:300px;
-    }
-    @media(max-width:400px){
-        width:200px;
     }
 }
 .info-odd{
@@ -108,23 +92,22 @@ button{
         width:480px;
     }
     @media(max-width:1000px){
-        width:400px;
+        width:100%;
         text-align: right;
         font-size: 16px;
-    }
-    @media(max-width:700px){
-        width:300px;
-    }
-    @media(max-width:400px){
-        width:200px;
     }
 }
 .info-about-project{
     @include dFlex($fd:column, $ai:flex-start);
     @media(max-width:1000px){
         align-items: flex-end;
+        width:100%;
     }
 }
 .info-about-project-even{
     @include dFlex($fd:column, $ai:flex-start);
+    @media(max-width:1000px){
+        // align-items: flex-end;
+        width:100%;
+    }
 }
