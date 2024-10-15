@@ -15,43 +15,45 @@ export class ProjectExamplesComponent implements AfterViewInit{
   @ViewChildren('example', { read: ElementRef }) examples!: QueryList<ElementRef>;
   
   ngAfterViewInit() {
-    this.examples.forEach((example, index) => {
-      if(index== 1){
-        const elementRight = example.nativeElement;
+    setTimeout(()=>{
+      this.examples.forEach((example, index) => {
+        if(index== 1){
+          const elementRight = example.nativeElement;
+          const options = {
+            root: null,
+            rootMargin: '100px',
+            threshold: 0.5,
+          };
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                    elementRight.classList.add('showLeft');
+                    observer.unobserve(elementRight)
+              } 
+            });
+          }, options);
+          observer.observe(elementRight);
+        }else{
+          const element = example.nativeElement;
+        
+        
+      
         const options = {
-          root: null,
-          rootMargin: '100px',
-          threshold: 0.5,
-        };
-          const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                  elementRight.classList.add('showLeft');
-                  observer.unobserve(elementRight)
-            } 
-          });
-        }, options);
-        observer.observe(elementRight);
-      }else{
-        const element = example.nativeElement;
-      
-      
-    
-      const options = {
-      root: null,
-      rootMargin: '100px',
-      threshold: 0.3,
-    };
-      const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-              element.classList.add('show');
-              observer.unobserve(element)
-        } 
-      });
-    }, options);
-    observer.observe(element);
-  }});
+        root: null,
+        rootMargin: '100px',
+        threshold: 0.3,
+      };
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+                element.classList.add('show');
+                observer.unobserve(element)
+          } 
+        });
+      }, options);
+      observer.observe(element);
+      }});
+    },2000);
   }
 
   projects: ProjectInterface[];
@@ -61,4 +63,3 @@ export class ProjectExamplesComponent implements AfterViewInit{
 }
 
 }
-

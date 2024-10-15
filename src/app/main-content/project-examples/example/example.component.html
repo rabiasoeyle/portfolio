@@ -1,6 +1,6 @@
 
     @if(even){
-        <div class="info-about-project-even">
+        <div  class="info-about-project-even">
             <div class="name">{{singleProject.name}}</div>
             <div class="languages-parent">
                 @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
@@ -20,25 +20,23 @@
         </div>
         <img class="img-even" src={{singleProject.img}} alt="Project image">
     }@else {
-
-    
-    <div class="info-about-project">
-        <div class="name">{{singleProject.name}}</div>
-        <div class="languages-parent">
-            @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
-                @if(!last){
-                    <div id="languages" class="languages">{{language}}|</div>
-                }@else {
-                    <div id="languages" class="languages">{{language}}</div>
+        <div  class="info-about-project">
+            <div class="name">{{singleProject.name}}</div>
+            <div class="languages-parent">
+                @for(language of singleProject.usedLanguages; track language; let last = $last; let odd = $odd; let even=$even){
+                    @if(!last){
+                        <div id="languages" class="languages">{{language}}|</div>
+                    }@else {
+                        <div id="languages" class="languages">{{language}}</div>
+                    }
                 }
-            }
+            </div>
+            <div class="info-odd">{{singleProject.info}}</div>
+            <a class="project-url" href={{singleProject.url}} target="_blank" rel="noopener noreferrer">
+                <button>
+                    Open project
+                </button>
+            </a>
         </div>
-        <div class="info-odd">{{singleProject.info}}</div>
-        <a class="project-url" href={{singleProject.url}} target="_blank" rel="noopener noreferrer">
-            <button>
-                Open project
-            </button>
-        </a>
-    </div>
-    <img class="img"src={{singleProject.img}} alt="Project image">
-}
+        <img class="img"src={{singleProject.img}} alt="Project image">
+    }

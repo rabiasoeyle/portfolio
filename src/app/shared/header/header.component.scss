@@ -2,7 +2,7 @@
 .parent{
     @include dFlex($jc:space-between);
     max-width:1920px;
-    padding:$parent-padding;
+    padding:20px 100px;
     @media(max-width:1000px){
         padding:$parent-padding-medium;
     }

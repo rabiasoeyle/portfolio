@@ -19,14 +19,14 @@ html{
 .example {
     width:100%;
     @include dFlex($g:20px, $jc:space-between, $ai:flex-start);
-
+    opacity: 0;
     &:nth-child(even) {
         @include dFlex($g:20px, $jc:space-between, $fd:row-reverse, $ai:flex-start);
         @media(max-width:1000px){
             flex-direction: column-reverse;
             align-items: flex-end;
         }
-        // opacity: 0;
+        opacity: 0;
         // transform: translateX(100%);
     }
     @media(max-width:1000px){

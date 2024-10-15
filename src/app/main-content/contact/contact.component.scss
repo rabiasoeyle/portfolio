@@ -49,6 +49,10 @@ h2{
 }
 .submit-button{
     @include button($bgc:black, $bc:$cream, $fc:$cream);
+    &:disabled{
+        border-color: rgba(227, 213, 213, 0.321);
+        color:rgba(227, 213, 213, 0.321);
+    }
 }
 .green-text{
     font-size:32px;
@@ -66,7 +70,7 @@ h2{
     }
 }
 .checkbox-and-text{
-    @include dFlex($jc:flex-start);
+    @include dFlex($jc:flex-start, $fd:column);
     padding:32px 0px;
     @media(max-width:1000px){
         justify-content: center;
