@@ -20,15 +20,15 @@
             }
             <div class="checkbox-and-text">
                 <div>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" [(ngModel)]="contactData.pPolicyAccepted" required>
+                    <input #checkbox = "ngModel" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" [(ngModel)]="contactData.pPolicyAccepted" required>
                     <label  class ="label-checkbox"for="vehicle1"> {{"contact.privacyPolicy"|translate}} <a [routerLink]="['dataProtection']">{{"contact.privacyPolicyLink"|translate}}</a> {{"contact.privacyPolicyTwo"|translate}}</label><br>
                 </div>
-                @if(!contactData.pPolicyAccepted){
+                @if(!contactData.pPolicyAccepted && pleaseAcceptPolicy){
                 <p class="error">{{"contact.ppError"|translate}}</p>
                 }
             </div>
             <!-- @if(!name.valid || !message.valid || !email.valid || !contactData.pPolicyAccepted){ -->
-                <button [disabled]="!name.valid || !message.valid || !email.valid || !contactData.pPolicyAccepted" class="submit-button" type="submit" value="Submit">
+                <button [disabled]="!name.valid || !message.valid || !email.valid" class="submit-button" type="submit" value="Submit">
                     {{"contact.submitButton"|translate}}
                 </button>
             <!-- }@else {

@@ -21,6 +21,7 @@ contactData = {
   buttonIsClicked:false,
 };
 isButtonDisabled:boolean=true;
+pleaseAcceptPolicy:boolean = false;
 
 mailTest = false;
 //dieses hier muss zu false umgeändert werden, bevor ich diese auf den Server lade
@@ -39,6 +40,9 @@ mailTest = false;
 onSubmit(ngForm: NgForm) {
   this.contactData.buttonIsClicked=true,
   console.log(this.contactData);
+  if(!this.contactData.pPolicyAccepted){
+    this.pleaseAcceptPolicy = true;
+  }
   if (ngForm.form.valid && !this.mailTest && this.contactData.pPolicyAccepted) {
     this.httpClient.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
@@ -52,6 +56,7 @@ onSubmit(ngForm: NgForm) {
         complete: () => console.info('send post complete'),
       });
       this.isButtonDisabled =false;
+      this.pleaseAcceptPolicy=false;
   }
   //die erste if-Abfrage wird nur durchgeführt,wenn das Projekt über die domain geladen wird, 
   //sonst wird der elseIf Teil geladen 
