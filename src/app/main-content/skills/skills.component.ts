@@ -10,12 +10,12 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SkillsComponent implements AfterViewInit {
   @ViewChild('lineOne') right!: ElementRef;
-  @ViewChild('lineTwo') left!: ElementRef;
+  // @ViewChild('lineTwo') left!: ElementRef;
   @ViewChild('mySkills') skills!: ElementRef;
   
   ngAfterViewInit() {
     let right = this.right.nativeElement;
-    let left = this.left.nativeElement;
+    // let left = this.left.nativeElement;
     let skills = this.skills.nativeElement;
     const options = {
       root: null,
@@ -26,7 +26,7 @@ export class SkillsComponent implements AfterViewInit {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           right.classList.add('show');
-          left.classList.add('showLeft');
+          // left.classList.add('showLeft');
           observer.unobserve(skills);
         } 
       });

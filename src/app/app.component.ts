@@ -18,4 +18,5 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 })
 export class AppComponent {
   title = 'portfolio';
+  
 }

@@ -12,18 +12,14 @@ a{
 }
 .parent{
     @include dFlex($jc:space-between);
-    // height: 100px;
-    padding:$parent-padding;
+    padding:60px 100px;
+    max-width:1920px;
+    width: 100vW;
     @media(max-width:1000px){
         padding: 60px 0px;
         flex-direction: column-reverse;
         justify-content: center;
     }
-    @media(max-width:500px){
-        // padding:$parent-padding-resp;
-    }
-    max-width:1920px;
-    width: 100vW;
 }
 .legal-notice-and-svgs{
     @include dFlex($fd:column, $jc:space-between);

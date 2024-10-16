@@ -27,17 +27,17 @@
                 <p class="error">{{"contact.ppError"|translate}}</p>
                 }
             </div>
-            <!-- @if(!name.valid || !message.valid || !email.valid || !contactData.pPolicyAccepted){ -->
                 <button [disabled]="!name.valid || !message.valid || !email.valid" class="submit-button" type="submit" value="Submit">
                     {{"contact.submitButton"|translate}}
                 </button>
-            <!-- }@else {
-
-            } -->
-            <!-- @if((!name.valid || !message.valid || !email.valid || !contactData.pPolicyAccepted) && contactData.buttonIsClicked){
-                
-                <p class="error">{{"contact.submitError"|translate}}</p>
-            } -->
         </form>
+    </div>
+    <div class="arrow">
+        <a href="#atf">
+            <svg width="54" height="77" viewBox="0 0 54 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44.8525 38.1265L26.9263 24.0002L9.00011 38.1265" stroke="#FFFCF3" stroke-width="4"/>
+                <path d="M26.9268 76.0439L26.9268 24" stroke="#FFFCF3" stroke-width="4"/>
+            </svg>
+        </a>
     </div>
 </div>

@@ -1,12 +1,7 @@
 @import '../../../styles.scss';
 .parent{
-    // background-color: black;
     color:white;
-    @include dFlex($fd:column);
     margin-top: 20%;
-}
-.parent-content{
-    max-width:1920px;
     padding:$parent-padding;
     @media(max-width:1000px){
         padding: $parent-padding-medium;
@@ -14,11 +9,13 @@
     @media(max-width:500px){
         padding:$parent-padding-resp;
     }
+}
+.parent-content{
+    max-width:1920px;
     text-align: center;
     @include dFlex($fd:column);
     background-color: black;
     color:white;
-    // width:100%;
 }
 .form{
     padding:100px 0px;
@@ -90,7 +87,9 @@ a{
 .label-checkbox{
     text-align: center;
     @media(max-width:1000px){
-        font-size: 10px;
-    }
-    
+        font-size: 14px;
+    } 
+}
+.arrow{
+    @include dFlex($jc:flex-end);
 }

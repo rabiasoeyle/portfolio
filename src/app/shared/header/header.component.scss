@@ -3,15 +3,15 @@
     @include dFlex($jc:space-between);
     max-width:1920px;
     padding:20px 100px;
-    @media(max-width:1000px){
-        padding:$parent-padding-medium;
-    }
-    @media(max-width:500px){
-        padding:$parent-padding-resp;
-    }
     width:100vW;
     background-color: $cream;
     border-bottom: solid 1px black;
+    @media(max-width:1000px){
+        padding:10px 48px;
+    }
+    @media(max-width:500px){
+        padding:10px 20px;
+    }
 }
 .toggle-menu{
     cursor: pointer;

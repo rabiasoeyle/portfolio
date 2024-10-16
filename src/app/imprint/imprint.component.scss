@@ -1,6 +1,5 @@
 @import "../../styles.scss";
 .parent{
-    // max-width:1920px;
     @include dFlex();
     min-height:100vh;
     @media(max-width:1000px){
