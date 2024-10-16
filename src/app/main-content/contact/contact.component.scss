@@ -3,6 +3,7 @@
     color:white;
     margin-top: 20%;
     padding:$parent-padding;
+    @include dFlex($fd:column);
     @media(max-width:1000px){
         padding: $parent-padding-medium;
     }
@@ -12,6 +13,7 @@
 }
 .parent-content{
     max-width:1920px;
+    width:100%;
     text-align: center;
     @include dFlex($fd:column);
     background-color: black;
@@ -92,4 +94,5 @@ a{
 }
 .arrow{
     @include dFlex($jc:flex-end);
+    width:100%;
 }

@@ -2,11 +2,12 @@
 .parent{
     @include dFlex();
     min-height:100vh;
+    padding:60px 100px;
     @media(max-width:1000px){
-        padding: $parent-padding-medium;
+        padding: 20px 48px;
     }
     @media(max-width:500px){
-        padding:$parent-padding-resp;
+        padding:10px 20px;
     }
 }
 .child{
