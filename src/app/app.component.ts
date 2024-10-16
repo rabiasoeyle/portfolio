@@ -6,6 +6,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { ViewportScroller } from '@angular/common';
 // import { TranslateModule } from '@ngx-translate/core';
 // import {TranslateService} from "@ngx-translate/core";
 
@@ -18,12 +19,19 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 })
 export class AppComponent implements AfterViewInit{
   title = 'portfolio';
-  @ViewChild('top') topElement!: ElementRef;
-  constructor(private router: Router) {}
+  @ViewChild('topOfPage') topElement!: ElementRef;
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
   ngAfterViewInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.scrollToTop();
+        const fragment = this.router.parseUrl(this.router.url).fragment;
+        if (fragment) {
+          // Scrollen zu dem Element mit der ID (fragment)
+          this.viewportScroller.scrollToAnchor(fragment);
+        } else {
+          // Standard-Scrollverhalten (du könntest auch hier steuern, wo es hin scrollt)
+          this.viewportScroller.scrollToPosition([0, 0]); // oder an eine bestimmte Position
+        }
       }
     });
   }
