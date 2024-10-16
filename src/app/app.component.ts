@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component,OnInit, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
@@ -16,7 +16,21 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'portfolio';
+  @ViewChild('top') topElement!: ElementRef;
+  constructor(private router: Router) {}
+  ngAfterViewInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.scrollToTop();
+      }
+    });
+  }
   
+  scrollToTop() {
+    if (this.topElement) {
+      this.topElement.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 }
