@@ -62,7 +62,7 @@ onSubmit(ngForm: NgForm) {
       }, 1000);
       setTimeout(() => {
         this.showPopUp = false // Entfernt das Popup nach 2 Sekunden
-      }, 4000);
+      }, 8000);
   }
   //die erste if-Abfrage wird nur durchgeführt,wenn das Projekt über die domain geladen wird, 
   //sonst wird der elseIf Teil geladen 
