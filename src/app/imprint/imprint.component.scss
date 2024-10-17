@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 .parent{
     @include dFlex();
-    min-height:100vh;
+    min-height:95vh;
     padding:60px 100px;
     @media(max-width:1000px){
         padding: 20px 48px;
@@ -28,6 +28,7 @@ h3{
 }
 p{
     font-size:20px;
+    text-align: center;
 }
 a {
     display: inline-block;
