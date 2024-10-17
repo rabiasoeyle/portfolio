@@ -1,8 +1,8 @@
 @import '../../../styles.scss';
 .parent{
     color:white;
-    margin-top: 20%;
-    padding:$parent-padding;
+    margin-top: 10%;
+    padding:0px 100px;
     // position: relative;
     @include dFlex($fd:column);
     @media(max-width:1000px){
@@ -17,7 +17,6 @@
     width:100%;
     text-align: center;
     @include dFlex($fd:column);
-    background-color: black;
     color:white;
     position: relative;
 }
@@ -120,4 +119,12 @@ a{
     @media(max-width:1000px){
         font-size: 16px;
     }
+}
+input{
+    font-family: "Overpass";
+    font-size: 16px;
+}
+textarea{
+    font-family: "Overpass";
+    font-size: 16px;
 }
