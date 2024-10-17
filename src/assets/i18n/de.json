@@ -74,7 +74,8 @@
     "privacyPolicyTwo":"gelesen und akzeptiere die Verarbeitung meiner Daten",
     "ppError":"Bitte akzeptiere unsere Datenschutzrichtlinien",
     "submitButton":"Nachricht senden",
-    "submitError":"Bitte füllen sie alle Felder aus."
+    "submitError":"Bitte füllen sie alle Felder aus.",
+    "mailSended":"Vielen Dank! Ihre Email wurde erfolgreich abgesendet. Sie werden im nächstmöglichen Zeitpunkt kontaktiert"
   },
   "skills":{
     "firstSentence":"Haben Sie nicht die Fähigkeiten gefunden, die Sie suchen?",

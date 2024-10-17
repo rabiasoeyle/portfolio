@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,6 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  showPopUp:boolean = false;
 httpClient = inject(HttpClient) ;
 contactData = {
   name:"",
@@ -38,8 +39,7 @@ mailTest = false;
   };
 
 onSubmit(ngForm: NgForm) {
-  this.contactData.buttonIsClicked=true,
-  console.log(this.contactData);
+  this.contactData.buttonIsClicked=true;
   if(!this.contactData.pPolicyAccepted){
     this.pleaseAcceptPolicy = true;
   }
@@ -57,15 +57,20 @@ onSubmit(ngForm: NgForm) {
       });
       this.isButtonDisabled =false;
       this.pleaseAcceptPolicy=false;
+      setTimeout(() => {
+        this.showPopUp = true
+      }, 1000);
+      setTimeout(() => {
+        this.showPopUp = false // Entfernt das Popup nach 2 Sekunden
+      }, 4000);
   }
   //die erste if-Abfrage wird nur durchgeführt,wenn das Projekt über die domain geladen wird, 
   //sonst wird der elseIf Teil geladen 
   else if (ngForm.form.valid && this.mailTest) {
     ngForm.resetForm();
-    console.log('Else-if-Teil');
   }else {
-    console.error('Form is invalid or privacy policy not accepted');
   }
 }
+
 
 }

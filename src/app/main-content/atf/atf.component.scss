@@ -53,10 +53,13 @@ h1{
 }
 .parent{
     @include dFlex($fd:column);
-    height:100vH;
+    height:95vH;
     background-color: $cream;
     max-width:1920px;
     padding:0px 100px;
+    @media(max-width:1200px){
+        justify-content: space-around;
+    }
     @media(max-width:1000px){
         padding: 0px 48px;
     }
@@ -65,7 +68,7 @@ h1{
     }
 }
 .email-and-scroll-arrow{
-    @include dFlex($jc:space-between, $ai:center);
+    @include dFlex($jc:space-between, $ai:flex-end);
     width:100%;
 }
 svg{

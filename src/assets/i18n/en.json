@@ -74,7 +74,8 @@
     "privacyPolicyTwo":"and agree to the processing of my data as outlined",
     "ppError":"Please accept our privacy policy",
     "submitButton":"Send message",
-    "submitError":"Please fill all fields"
+    "submitError":"Please fill all fields",
+    "mailSended":"Thank you! Your mail was successfully sended. You will be contacted at the next opportunity."
   },
   "skills": {
     "firstSentence": "Didn't find the skills you're looking for?",

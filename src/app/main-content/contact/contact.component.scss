@@ -3,6 +3,7 @@
     color:white;
     margin-top: 20%;
     padding:$parent-padding;
+    position: relative;
     @include dFlex($fd:column);
     @media(max-width:1000px){
         padding: $parent-padding-medium;
@@ -95,4 +96,25 @@ a{
 .arrow{
     @include dFlex($jc:flex-end);
     width:100%;
+    max-width: 1920px;
+}
+.popup{
+    z-index: 40;
+    height: 100px;
+    width: 60%;
+    max-width: 1440px;
+    background-color: black;
+    color: #FFFCF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: solid 3px #FFFCF3;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideIn 0.5s forwards; /* Apply animation */
+    @media(max-width:1000px){
+        font-size: 16px;
+    }
 }
