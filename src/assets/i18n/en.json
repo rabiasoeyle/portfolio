@@ -5,7 +5,7 @@
     "projectlist": [
       {
         "name": "Sharkie",
-        "url": "https://rabia-soeylemez.developerakademie.net/Sharkie/index.html",
+        "url": "https://rabia-soeylemez.com/sharkie/index.html",
         "img": "assets/img/Sharkie.png",
         "date": "09/24",
         "info": "Sharkie is a Jump-and-Run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to fight the killer whale.",
@@ -14,7 +14,7 @@
       },
       {
         "name": "Join",
-        "url": "https://bd-0524-join-1.developerakademie.net/join-group-wark/html/index.html",
+        "url": "https://rabia-soeylemez.com/join/html/index.html",
         "img": "assets/img/Join.png",
         "date": "09/24",
         "info": "Join is a task manager inspired by the Kanban system. Create and organize tasks with drag-and-drop functions, assign users and categories.",
@@ -23,7 +23,7 @@
       },
       {
         "name": "Pokedex",
-        "url": "https://rabia-soeylemez.developerakademie.net/pokemon/index.html",
+        "url": "https://rabia-soeylemez.com/pokemon/index.html",
         "img": "assets/img/Pokedex.png",
         "date": "07/24",
         "info": "A Pokedex is a simple library that provides and catalogs Pokémon information based on the PokeAPI.",
